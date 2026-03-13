@@ -12,14 +12,14 @@
         <div class="header-container">
             <div class="header-left">
                 <div class="brand-group">
-                    <img src="Assets/logo.png" alt="Logo" class="logo-img">
+                    <img src="logo.png" alt="Logo" class="logo-img">
                     <span class="brand-name">MazterCaps</span>
                 </div>
             </div>
             
             <div class="header-center">
                 <div class="dropdown">
-                    <button id="btnModelos" class="nav-btn">MATERIALES DISPONIBLES ▼</button>
+                    <button id="btnModelos" class="nav-btn">MODELOS ▼</button>
                     <ul id="modelMenu" class="dropdown-menu"></ul>
                 </div>
             </div>
@@ -39,24 +39,15 @@
                 <div id="miniaturas-container" class="thumbs-grid"></div>
 
                 <div class="info-adicional">
-                    <div class="cajon-info">
-                        <small>Circunferencia</small>
-                        <span>--</span>
-                    </div>
-                    <div class="cajon-info">
-                        <small>Altura</small>
-                        <span>--</span>
-                    </div>
-                    <div class="cajon-info">
-                        <small>Visera</small>
-                        <span>--</span>
-                    </div>
+                    <div class="cajon-info"><small>Circunferencia</small><span>--</span></div>
+                    <div class="cajon-info"><small>Altura</small><span>--</span></div>
+                    <div class="cajon-info"><small>Visera</small><span>--</span></div>
                 </div>
             </section>
 
             <aside class="options-sidebar">
                 <div class="options-top">
-                    <h2 id="product-name" style="color: var(--camel);">--</h2>
+                    <h2 id="product-name">--</h2>
                     <h3>Colores Disponibles</h3>
                     <div id="selector-colores" class="color-grid"></div>
                 </div>
@@ -64,6 +55,7 @@
                 <div class="legal-info">
                     <p class="import-note">Importador legal ante la DIAN</p>
                 </div>
+
                 <div class="price-footer">
                     <div id="precio-producto" class="price-display">--</div>
                     <p class="tax-note">Precio con IVA incluido, preguntar para más información.</p>
@@ -72,43 +64,45 @@
         </div>
     </main>
 
-    <div id="modalContacto" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        
-        <div class="modal-tabs">
-            <button class="tab-btn active" onclick="openTab(event, 'info-contacto')">Contacto</button>
-            <button class="tab-btn" onclick="openTab(event, 'guia-tecnica')">Guía de Calidad</button>
+    <section class="brand-story-section">
+        <div class="section-container">
+            <h2 class="section-title">Ingeniería de una MazterCaps</h2>
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-icon">🧵</div>
+                    <h3>Materiales Premium</h3>
+                    <p>Utilizamos paño de alta densidad seleccionado por su durabilidad. Este material permite que la gorra mantenga su textura a pesar del uso diario.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">🏗️</div>
+                    <h3>Construcción</h3>
+                    <p>Estructura de 6 paneles reforzados internamente con entretela rígida, garantizando que la corona nunca pierda su forma original.</p>
+                </div>
+                <div class="story-card">
+                    <div class="story-icon">📏</div>
+                    <h3>Ajuste Real</h3>
+                    <p>Nuestras medidas están calculadas para adaptarse a la fisonomía real, ofreciendo un equilibrio entre estética y comodidad absoluta.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div id="info-contacto" class="tab-content active">
+    <div id="modalContacto" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
             <div class="modal-header-brand">
                 <img src="logo.png" alt="Logo" style="width:50px;">
                 <h2>MazterCaps Premium</h2>
             </div>
-            <p>Importador legal ante la DIAN. Calidad urbana garantizada.</p>
-            <hr>
-            <p><strong>📍 Ubicación:</strong> Calle Ficticia #123, Bogotá</p>
-            <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank">Escribir al WhatsApp</a>
-        </div>
-
-        <div id="guia-tecnica" class="tab-content">
-            <h3>Construcción y Materiales</h3>
-            <div class="guia-item">
-                <strong>🧵 Material:</strong>
-                <p>Nuestras gorras están fabricadas en paño de alta densidad, lo que proporciona una estructura firme y un tacto suave premium.</p>
-            </div>
-            <div class="guia-item">
-                <strong>🏗️ Construcción:</strong>
-                <p>Diseño de 6 paneles con costuras reforzadas y visera pre-curvada con memoria de forma.</p>
-            </div>
-            <div class="guia-item">
-                <strong>📏 Sistema de Medidas:</strong>
-                <p>El diámetro se mide en la base de la corona. Nuestras medidas dinámicas aseguran un ajuste ergonómico para cada modelo.</p>
+            <div class="modal-body">
+                <p>Especialistas en acabados de alta calidad.</p>
+                <hr>
+                <p><strong>📍 Ubicación:</strong> Bogotá, Colombia</p>
+                <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank">Escribir al WhatsApp</a>
             </div>
         </div>
     </div>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>
