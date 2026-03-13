@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nombreTxt = document.getElementById('product-name');
     const contenedoresMedidas = document.querySelectorAll('.cajon-info span');
     const modal = document.getElementById("modalContacto");
-
+    
     btnModelos.onclick = (e) => { 
         e.stopPropagation(); 
         modelMenu.classList.toggle('active'); 
@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             configurarMenu(data);
-            cargarProducto(data[0]);
+            if(data.length > 0) cargarProducto(data[0]);
         })
         .catch(err => console.error("Error cargando el JSON:", err));
     function configurarMenu(productos) {
-    const menu = document.getElementById('modelMenu');
-    menu.innerHTML = '';
-    productos.forEach(prod => {
-        const li = document.createElement('li');
-        li.textContent = `${prod.nombre} - ${prod.categoria}`; 
-        li.onclick = () => {
-            cargarProducto(prod);
-            menu.classList.remove('active');
-        };
-        menu.appendChild(li);
-    });
+        modelMenu.innerHTML = '';
+        productos.forEach(prod => {
+            const li = document.createElement('li');
+            li.textContent = `${prod.nombre} - ${prod.categoria}`; 
+            li.onclick = () => {
+                cargarProducto(prod);
+                modelMenu.classList.remove('active');
+            };
+            modelMenu.appendChild(li);
+        });
+    }
     function cargarProducto(item) {
         nombreTxt.textContent = item.nombre;
         precioTxt.textContent = `$ ${item.precio_mayoreo.toLocaleString('es-CO')} COP`;
@@ -61,15 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function resaltarInfografia(tipo) {
         const cards = document.querySelectorAll('.comp-card');
-        cards.forEach(card => card.classList.remove('highlight'));
-        if (tipo === 5) cards[0].classList.add('highlight');
-        if (tipo === 6) cards[1].classList.add('highlight');
+        if (cards.length >= 2) {
+            cards.forEach(card => card.classList.remove('highlight'));
+            if (tipo === 5) cards[0].classList.add('highlight');
+            if (tipo === 6) cards[1].classList.add('highlight');
+        }
     }
     function actualizarVista(colorData) {
         fotoPrincipal.classList.add('fade-out');
         setTimeout(() => {
             fotoPrincipal.src = colorData.fotos[0];
             fotoPrincipal.classList.remove('fade-out');
+            
             miniaturasContainer.innerHTML = '';
             colorData.fotos.forEach(imgUrl => {
                 const img = document.createElement('img');
