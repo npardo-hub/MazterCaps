@@ -1,10 +1,11 @@
 [
    {
     "id": "g-002",
-    "nombre": "Militar",
-    "categoria": "Diseño tipo camuflaje",
-    "descripcion": "Una gorra más especial, con un diseño tipo camuflaje.",
-    "precio_mayoreo": 6000,
+    "nombre": "Militar Camo",
+    "categoria": "Diseño Especial",
+    "tipo_paneles": 5,
+    "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
+    "precio_mayoreo": 6500,
     "stock_total": 0,
     "medidas": {
       "circunferencia": "20 cm",
@@ -13,19 +14,21 @@
     },
     "colores": [
       {
-        "color_nombre": "Verde",
-        "hex": "#006400",
+        "color_nombre": "Verde Militar",
+        "hex": "#4B5320",
         "fotos": [
           "Assets/VerdeMilitar.jpeg"
         ]
-      },
-  {
-    "id": "g-001",
-    "nombre": "Paño",
+      }
+    ]
+  },
+  "id": "g-001",
+    "nombre": "Paño Classic",
     "categoria": "Urbana",
-    "descripcion": "La gorra clásica hecha en paño es un ícono de estilo urbano que combina diseño, estructura y comodididad.",
+    "tipo_paneles": 6,
+    "descripcion": "La gorra clásica hecha en paño es un ícono de estilo urbano que combina diseño, estructura y comodidad.",
     "precio_mayoreo": 6000,
-    "stock_total": 0,
+    "stock_total": 50,
     "medidas": {
       "circunferencia": "20 cm",
       "altura": "11.5 cm",
