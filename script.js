@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const btnModelos = document.getElementById('btnModelos');
+    const btnMateriales = document.getElementById('btnModelos');
     const modelMenu = document.getElementById('modelMenu');
     const fotoPrincipal = document.getElementById('foto-principal');
     const miniaturasContainer = document.getElementById('miniaturas-container');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nombreTxt = document.getElementById('product-name');
     const contenedoresMedidas = document.querySelectorAll('.cajon-info span');
 
-    btnModelos.onclick = (e) => { e.stopPropagation(); modelMenu.classList.toggle('active'); };
+    btnMateriales.onclick = (e) => { e.stopPropagation(); modelMenu.classList.toggle('active'); };
     document.onclick = () => modelMenu.classList.remove('active');
     const modal = document.getElementById("modalContacto");
     document.querySelector(".btn-contacto").onclick = () => modal.style.display = "block";
