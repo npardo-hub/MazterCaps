@@ -47,6 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if(i === 0) div.click();
         });
     }
+    function cargarMenuModelos(productos) {
+    const menu = document.getElementById('modelMenu');
+    menu.innerHTML = '';
+
+    productos.forEach(producto => {
+        const li = document.createElement('li');
+        li.textContent = `${producto.nombre} - ${producto.categoria}`;
+        li.dataset.id = producto.id;
+        li.addEventListener('click', () => {
+            seleccionarProducto(producto.id);
+            menu.classList.remove('active'); 
+        });
+        menu.appendChild(li);
+    });
+}
     function actualizarVista(colorData) {
         fotoPrincipal.classList.add('fade-out');
         setTimeout(() => {
