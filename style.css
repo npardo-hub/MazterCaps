@@ -51,16 +51,20 @@ body {
 .product-grid { display: grid; grid-template-columns: 1fr 340px; gap: 40px; }
 .main-photo-card {
     background: var(--light-gray);
-    height: 500px;
+    border-radius: 12px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #eee;
 }
-#foto-principal { max-width: 85%; transition: 0.3s; }
+#foto-principal {width: 100%;height: 100%;object-fit: contain;transition: opacity var(--transition);}
 .fade-out { opacity: 0; }
-.thumbs-grid { display: flex; gap: 10px; margin-top: 20px; justify-content: center; }
-.miniatura { width: 70px; height: 70px; border: 1px solid #ddd; cursor: pointer; border-radius: 4px; padding: 3px; background: #fff; }
+.thumbs-grid {display: flex;gap: 12px;margin: 20px 0;justify-content: center;flex-wrap: wrap;}
+.miniatura {width: 75px;height: 75px;object-fit: cover;cursor: pointer;border: 2px solid var(--camel);border-radius: 6px;background: white;transition: transform 0.2s;}
+.miniatura:hover {transform: scale(1.05);}
 .info-adicional { display: flex; gap: 15px; margin-top: 30px; justify-content: center; }
 .cajon-info { flex: 1; background: #fafafa; border: 1px solid #eee; padding: 15px; text-align: center; border-radius: 4px; }
 .cajon-info small { display: block; color: var(--camel); font-size: 0.6rem; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; }
