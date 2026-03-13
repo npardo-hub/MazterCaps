@@ -1,4 +1,24 @@
 [
+   {
+    "id": "g-002",
+    "nombre": "Militar",
+    "categoria": "Diseño tipo camuflaje",
+    "descripcion": "Una gorra más especial, con un diseño tipo camuflaje.",
+    "precio_mayoreo": 6000,
+    "stock_total": 0,
+    "medidas": {
+      "circunferencia": "20 cm",
+      "altura": "11.5 cm",
+      "visera": "7 cm"
+    },
+    "colores": [
+      {
+        "color_nombre": "Verde",
+        "hex": "#006400",
+        "fotos": [
+          "Assets/VerdeMilitar.jpeg"
+        ]
+      },
   {
     "id": "g-001",
     "nombre": "Paño",
