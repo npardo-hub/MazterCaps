@@ -17,13 +17,12 @@
         "color_nombre": "Verde Militar",
         "hex": "#4B5320",
         "fotos": [
-          "Assets/Militar1.jpeg"},
+          "Assets/Militar1.jpeg"]},
       {
         "color_nombre": "Verde Militar2",
         "hex": "#00FF00",
         "fotos": [
-          "Assets/Militar2.jpeg"
-        ]
+          "Assets/Militar2.jpeg"]
       }
     ]
   },
