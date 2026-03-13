@@ -29,20 +29,45 @@ body {
 .brand-group { display: flex; align-items: center; gap: 10px; }
 .logo-img { width: 45px; }
 .brand-name { font-weight: bold; color: white; font-size: 1.4rem; }
-.btn-contacto {
-    background: transparent;
+.btn-contacto, 
+.btn-modelos {
+    background-color: transparent;
     color: white;
-    border: 1px solid rgba(255,255,255,0.7);
-    padding: 8px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 8px 24px;
+    border-radius: 2px;
     font-size: 0.75rem;
-    transition: 0.3s;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-family: inherit;
 }
-.btn-contacto:hover {
-    background: white;
+
+.btn-contacto:hover, 
+.btn-modelos:hover {
+    background-color: white;
     color: var(--camel);
+    border-color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px 0;
+    width: 180px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1100;
 }
 .page-wrapper { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
 .product-grid { display: grid; grid-template-columns: 1fr 340px; gap: 40px; }
