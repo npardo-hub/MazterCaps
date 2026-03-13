@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const precioTxt = document.getElementById('precio-producto');
     const nombreTxt = document.getElementById('product-name');
     const contenedoresMedidas = document.querySelectorAll('.cajon-info span');
+
     btnModelos.onclick = (e) => { e.stopPropagation(); modelMenu.classList.toggle('active'); };
     document.onclick = () => modelMenu.classList.remove('active');
     const modal = document.getElementById("modalContacto");
@@ -58,7 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.className = 'miniatura';
                 img.onclick = () => {
                     fotoPrincipal.classList.add('fade-out');
-                    setTimeout(() => { fotoPrincipal.src = imgUrl; fotoPrincipal.classList.remove('fade-out'); }, 200);
+                    setTimeout(() => { 
+                        fotoPrincipal.src = imgUrl; 
+                        fotoPrincipal.classList.remove('fade-out'); 
+                    }, 200);
                 };
                 miniaturasContainer.appendChild(img);
             });
