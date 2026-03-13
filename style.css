@@ -293,23 +293,31 @@ body {
 }
 .dropdown { position: relative; }
 .dropdown-menu {
-    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px; 
+    overflow-y: auto;
     background: white;
     border: 1px solid #eee;
-    width: 200px;
-    display: none;
+    width: 250px;
+    position: absolute;
     top: calc(100% + 15px);
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    z-index: 1100;
+    display: none;
 }
-.dropdown-menu.active { display: block; }
+.dropdown-menu.active {
+    display: block;
+}
 .dropdown-menu li {
     padding: 12px 20px;
     cursor: pointer;
     font-size: 0.85rem;
+    border-bottom: 1px solid #f9f9f9;
+    color: var(--text);
+    text-align: left;
     transition: background 0.2s;
 }
 .dropdown-menu li:hover {
