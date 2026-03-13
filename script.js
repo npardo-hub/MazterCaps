@@ -24,14 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.error("Error cargando el JSON:", err));
     function configurarMenu(productos) {
-        modelMenu.innerHTML = '';
-        productos.forEach(prod => {
-            const li = document.createElement('li');
-            li.textContent = `${prod.nombre} (${prod.categoria})`;
-            li.onclick = () => cargarProducto(prod);
-            modelMenu.appendChild(li);
-        });
-    }
+    const menu = document.getElementById('modelMenu');
+    menu.innerHTML = '';
+    productos.forEach(prod => {
+        const li = document.createElement('li');
+        li.textContent = `${prod.nombre} - ${prod.categoria}`; 
+        li.onclick = () => {
+            cargarProducto(prod);
+            menu.classList.remove('active');
+        };
+        menu.appendChild(li);
+    });
     function cargarProducto(item) {
         nombreTxt.textContent = item.nombre;
         precioTxt.textContent = `$ ${item.precio_mayoreo.toLocaleString('es-CO')} COP`;
