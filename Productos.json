@@ -1,12 +1,12 @@
 [
   {
     "id": "g-002",
-    "nombre": "Militar Camo",
+    "nombre": "Militar",
     "categoria": "Diseño Especial",
     "tipo_paneles": 5,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
     "precio_mayoreo": 6500,
-    "stock_total": 0,
+    "stock_total": 1,
     "medidas": {
       "circunferencia": "20 cm",
       "altura": "11.5 cm",
@@ -29,7 +29,7 @@
     "tipo_paneles": 6,
     "descripcion": "La gorra clásica hecha en paño es un ícono de estilo urbano que combina diseño, estructura y comodidad.",
     "precio_mayoreo": 6000,
-    "stock_total": 50,
+    "stock_total": 1,
     "medidas": {
       "circunferencia": "20 cm",
       "altura": "11.5 cm",
