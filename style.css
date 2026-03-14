@@ -71,6 +71,28 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
+.stock-status {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.status-disponible {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+.status-agotado {
+    background-color: #ffebee;
+    color: #c62828;
+}
+.btn-whatsapp.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+    filter: grayscale(1);
+}
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 340px;
