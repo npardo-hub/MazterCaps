@@ -36,13 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     function cargarProducto(item) {
-        nombreTxt.textContent = item.nombre;
-        precioTxt.textContent = `$ ${item.precio_mayoreo.toLocaleString('es-CO')} COP`;
-        if (item.medidas) {
-            contenedoresMedidas[0].textContent = item.medidas.circunferencia;
-            contenedoresMedidas[1].textContent = item.medidas.altura;
-            contenedoresMedidas[2].textContent = item.medidas.visera;
-        }
+    const contenedorSidebar = document.querySelector('.options-top');
+    const viejoStock = document.querySelector('.stock-status');
+    if(viejoStock) viejoStock.remove();
+    const stockInfo = document.createElement('div');
+    const btnCompra = document.querySelector('.btn-whatsapp');
+    if (item.stock_total > 0) {
+        stockInfo.className = 'stock-status status-disponible';
+        stockInfo.textContent = '● Disponible';
+        btnCompra.classList.remove('disabled');
+        btnCompra.textContent = 'Escribir al WhatsApp';
+    } else {
+        stockInfo.className = 'stock-status status-agotado';
+        stockInfo.textContent = '○ Agotado temporalmente';
+        btnCompra.classList.add('disabled');
+        btnCompra.textContent = 'Consultar reposición';
+    }
+    nombreTxt.before(stockInfo);}
         resaltarInfografia(item.tipo_paneles);
         const selector = document.getElementById('selector-colores');
         selector.innerHTML = '';
