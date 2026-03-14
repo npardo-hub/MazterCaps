@@ -74,7 +74,7 @@
       { "color_nombre": "Mostaza", "hex": "#E0B046", "fotos": ["Assets/Mostaz_Drill.jpeg"] },
       { "color_nombre": "Rojo", "hex": "#FF0000", "fotos": ["Assets/Rojo_Drill.jpeg"] },
       { "color_nombre": "Salmon", "hex": "#FA8072", "fotos": ["Assets/Salmon_Drill.jpeg"] },
-      { "color_nombre": "Verde Limon", "hex": "#BFFF00", "fotos": ["Assets/Verde Limon_Dril.jpeg"] },
+      { "color_nombre": "Verde Limon", "hex": "#BFFF00", "fotos": ["Assets/Verde Limon_Drill.jpeg"] },
       { "color_nombre": "Verde", "hex": "#006400", "fotos": ["Assets/Verde_Drill.jpeg"] },
       { "color_nombre": "Vino Tinto", "hex": "#732E30", "fotos": ["Assets/Vino Tinto_Drill.jpeg"] }
     ]
