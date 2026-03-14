@@ -59,7 +59,7 @@
       "visera": "7 cm"
     },
     "colores": [
-      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/Azul Rey_Dril.jpeg"] },
+      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/Azul Rey_Drill.jpeg"] },
       { "color_nombre": "Azul Turkesa", "hex": "#0077FF", "fotos": ["Assets/Azul Turkesa_Drill.jpeg"] },
       { "color_nombre": "Azul", "hex": "#0000FF", "fotos": ["Assets/Azul_Drill.jpeg"] },
       { "color_nombre": "Beis", "hex": "#EDE8D0", "fotos": ["Assets/Beis_Drill.jpeg"] },
