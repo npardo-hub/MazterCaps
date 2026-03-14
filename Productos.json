@@ -16,7 +16,7 @@
       {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_5paneles.jpeg"]}]},
   {
     "id": "g-004",
-    "nombre": "Militar Camo",
+    "nombre": "Militar",
     "categoria": "Diseño Especial",
     "tipo_paneles": 6,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
@@ -32,8 +32,8 @@
       {"color_nombre": "Verde Militar2","hex": "#00FF00","fotos": ["Assets/Militar2.jpeg"]}]},
   {
     "id": "g-003",
-    "nombre": "207H Paño Acrilico",
-    "categoria": "Urbana",
+    "nombre": "207H Paño",
+    "categoria": "Acrilico",
     "tipo_paneles": 6,
     "descripcion": "La gorra clásica hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
     "precio_mayoreo": 6500,
@@ -48,7 +48,7 @@
   {
     "id": "g-002",
     "nombre": "207D Drill",
-    "categoria": "Urbana",
+    "categoria": "Clásico",
     "tipo_paneles": 6,
     "descripcion": "Gorra resistente fabricada en tela drill, ideal para uso diario y personalización.",
     "precio_mayoreo": 6000,
@@ -81,8 +81,8 @@
   },
   {
     "id": "g-001",
-    "nombre": "208 Drill Premium",
-    "categoria": "Urbana",
+    "nombre": "208 Drill",
+    "categoria": "Premium",
     "tipo_paneles": 6,
     "descripcion": "La versión premium de nuestra línea drill, con acabados superiores y mayor durabilidad.",
     "precio_mayoreo": 6000,
