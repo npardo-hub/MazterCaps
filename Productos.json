@@ -8,7 +8,7 @@
     "precio_mayoreo": 5000,
     "stock_total": 1,
     "medidas": {
-      "circunferencia": "53 cm",
+      "circunferencia": "56 cm",
       "altura": "16 cm",
       "visera": "7.5 cm"
     },
@@ -21,7 +21,7 @@
     "tipo_paneles": 6,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
     "precio_mayoreo": 7000,
-    "stock_total": 0,
+    "stock": 0,
     "medidas": {
       "circunferencia": "57 cm",
       "altura": "14 cm",
