@@ -1,10 +1,41 @@
 [
   {
-    "id": "g-002",
-    "nombre": "Militar Camo",
-    "categoria": "Diseño Especial",
+    "id": "g-005",
+    "nombre": "340 Drill",
+    "categoria": "Publicidad",
     "tipo_paneles": 5,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
+    "precio_mayoreo": 5000,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "20 cm",
+      "altura": "11.5 cm",
+      "visera": "7 cm"
+    },
+    "colores": [
+      {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_5paneles.jpeg"]}]},
+  {
+    "id": "g-004",
+    "nombre": "Militar Camo",
+    "categoria": "Diseño Especial",
+    "tipo_paneles": 6,
+    "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
+    "precio_mayoreo": 7000,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "20 cm",
+      "altura": "11.5 cm",
+      "visera": "7 cm"
+    },
+    "colores": [
+      {"color_nombre": "Verde Militar","hex": "#4B5320","fotos": ["Assets/Militar1.jpeg"]},
+      {"color_nombre": "Verde Militar2","hex": "#00FF00","fotos": ["Assets/Militar2.jpeg"]}]},
+  {
+    "id": "g-003",
+    "nombre": "207H Paño Acrilico",
+    "categoria": "Urbana",
+    "tipo_paneles": 6,
+    "descripcion": "La gorra clásica hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
     "precio_mayoreo": 6500,
     "stock_total": 1,
     "medidas": {
@@ -13,24 +44,13 @@
       "visera": "7 cm"
     },
     "colores": [
-      {
-        "color_nombre": "Verde Militar",
-        "hex": "#4B5320",
-        "fotos": ["Assets/Militar1.jpeg"]
-      },
-      {
-        "color_nombre": "Verde Militar2",
-        "hex": "#00FF00",
-        "fotos": ["Assets/Militar2.jpeg"]
-      }
-    ]
-  },
+      {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_PanoAcrilico.jpeg"]}]},
   {
-    "id": "g-001",
-    "nombre": "Paño Classic",
+    "id": "g-002",
+    "nombre": "207D Drill",
     "categoria": "Urbana",
     "tipo_paneles": 6,
-    "descripcion": "La gorra clásica hecha en paño es un ícono de estilo urbano que combina diseño, estructura y comodidad.",
+    "descripcion": "Gorra resistente fabricada en tela drill, ideal para uso diario y personalización.",
     "precio_mayoreo": 6000,
     "stock_total": 1,
     "medidas": {
@@ -39,127 +59,44 @@
       "visera": "7 cm"
     },
     "colores": [
-      {
-        "color_nombre": "Negro",
-        "hex": "#000000",
-        "fotos": ["Assets/Negro 2.jpeg"]
-      },
-      {
-        "color_nombre": "Rojo",
-        "hex": "#FF0000",
-        "fotos": [
-          "Assets/Rojo 1.jpeg",
-          "Assets/Rojo 2.jpeg",
-          "Assets/Rojo 3.jpeg",
-          "Assets/Rojo19.jpeg"
-        ]
-      },
-      {
-        "color_nombre": "Azul oscuro",
-        "hex": "#5C76AF",
-        "fotos": ["Assets/Azul Oscuro24.jpeg"]
-      },
-      {
-        "color_nombre": "Azul Rey",
-        "hex": "#120FFF",
-        "fotos": ["Assets/Azul Rey38.jpeg"]
-      },
-      {
-        "color_nombre": "Amarillo",
-        "hex": "#F3FF00",
-        "fotos": ["Assets/Amarillo.jpeg", "Assets/Amarillo 2.jpeg"]
-      },
-      {
-        "color_nombre": "Azul Turkesa",
-        "hex": "#0077FF",
-        "fotos": ["Assets/Azul Turkesa23.jpeg"]
-      },
-      {
-        "color_nombre": "Beis",
-        "hex": "#EDE8D0",
-        "fotos": ["Assets/Beis3.jpeg"]
-      },
-      {
-        "color_nombre": "Blanco",
-        "hex": "#FFFFFF",
-        "fotos": [
-          "Assets/Blanco 1.jpeg",
-          "Assets/Blanco 2.jpeg",
-          "Assets/Blanco 3.jpeg",
-          "Assets/Blanco.jpeg"
-        ]
-      },
-      {
-        "color_nombre": "Cafe",
-        "hex": "#8B4513",
-        "fotos": ["Assets/Cafe 2.jpeg"]
-      },
-      {
-        "color_nombre": "Caki",
-        "hex": "#E0D8B0",
-        "fotos": ["Assets/Caki2.jpeg"]
-      },
-      {
-        "color_nombre": "Fucsia",
-        "hex": "#FF00FF",
-        "fotos": ["Assets/Fucsia30.jpeg"]
-      },
-      {
-        "color_nombre": "Guayaba",
-        "hex": "#E6C8C1",
-        "fotos": ["Assets/Guayaba34.jpeg"]
-      },
-      {
-        "color_nombre": "Gris Claro",
-        "hex": "#CDCDCD",
-        "fotos": ["Assets/Gris Claro20.jpeg"]
-      },
-      {
-        "color_nombre": "Gris Oscuro",
-        "hex": "#828282",
-        "fotos": ["Assets/Gris Oscuro17.jpeg"]
-      },
-      {
-        "color_nombre": "Gris",
-        "hex": "#9C9C9C",
-        "fotos": ["Assets/Gris32.jpeg"]
-      },
-      {
-        "color_nombre": "Morado",
-        "hex": "#800080",
-        "fotos": ["Assets/Morado28.jpeg"]
-      },
-      {
-        "color_nombre": "Mostaza",
-        "hex": "#E0B046",
-        "fotos": ["Assets/Mostaza8.jpeg"]
-      },
-      {
-        "color_nombre": "Salmon",
-        "hex": "#FA8072",
-        "fotos": ["Assets/Salmon18.jpeg"]
-      },
-      {
-        "color_nombre": "Verde",
-        "hex": "#006400",
-        "fotos": [
-          "Assets/Verde 1.jpeg",
-          "Assets/Verde 2.jpeg",
-          "Assets/Verde 3.jpeg",
-          "Assets/Verde27.jpeg"
-        ]
-      },
-      {
-        "color_nombre": "Verde Limon",
-        "hex": "#BFFF00",
-        "fotos": ["Assets/Verde Limon37.jpeg"]
-      },
-      {
-        "color_nombre": "Vino Tinto",
-        "hex": "#732E30",
-        "fotos": ["Assets/Vino Tinto13.jpeg"]
-      }
-    ],
-    "tags": ["nuevo", "plana", "paño", "unisex", "urbana", "clásica"]
+      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/Azul Rey_Dril.jpeg"] },
+      { "color_nombre": "Azul Turkesa", "hex": "#0077FF", "fotos": ["Assets/Azul Turkesa_Drill.jpeg"] },
+      { "color_nombre": "Azul", "hex": "#0000FF", "fotos": ["Assets/Azul_Drill.jpeg"] },
+      { "color_nombre": "Beis", "hex": "#EDE8D0", "fotos": ["Assets/Beis_Drill.jpeg"] },
+      { "color_nombre": "Blanco", "hex": "#FFFFFF", "fotos": ["Assets/Blanco_Drill.jpeg"] },
+      { "color_nombre": "Caki", "hex": "#E0D8B0", "fotos": ["Assets/Caki_Drill.jpeg"] },
+      { "color_nombre": "Fucsia", "hex": "#FF00FF", "fotos": ["Assets/Fucsia_Drill.jpeg"] },
+      { "color_nombre": "Gris Claro", "hex": "#CDCDCD", "fotos": ["Assets/Gris Claro_Drill.jpeg"] },
+      { "color_nombre": "Gris Oscuro", "hex": "#828282", "fotos": ["Assets/Gris Oscuro_Drill.jpeg"] },
+      { "color_nombre": "Gris", "hex": "#9C9C9C", "fotos": ["Assets/Gris_Drill.jpeg"] },
+      { "color_nombre": "Guayaba", "hex": "#E6C8C1", "fotos": ["Assets/Guayaba_Drill.jpeg"] },
+      { "color_nombre": "Morado", "hex": "#800080", "fotos": ["Assets/Morado_Drill.jpeg"] },
+      { "color_nombre": "Mostaza", "hex": "#E0B046", "fotos": ["Assets/Mostaz_Drill.jpeg"] },
+      { "color_nombre": "Rojo", "hex": "#FF0000", "fotos": ["Assets/Rojo_Drill.jpeg"] },
+      { "color_nombre": "Salmon", "hex": "#FA8072", "fotos": ["Assets/Salmon_Drill.jpeg"] },
+      { "color_nombre": "Verde Limon", "hex": "#BFFF00", "fotos": ["Assets/Verde Limon_Dril.jpeg"] },
+      { "color_nombre": "Verde", "hex": "#006400", "fotos": ["Assets/Verde_Drill.jpeg"] },
+      { "color_nombre": "Vino Tinto", "hex": "#732E30", "fotos": ["Assets/Vino Tinto_Drill.jpeg"] }
+    ]
+  },
+  {
+    "id": "g-001",
+    "nombre": "208 Drill Premium",
+    "categoria": "Urbana",
+    "tipo_paneles": 6,
+    "descripcion": "La versión premium de nuestra línea drill, con acabados superiores y mayor durabilidad.",
+    "precio_mayoreo": 6000,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "20 cm",
+      "altura": "11.5 cm",
+      "visera": "7 cm"
+    },
+    "colores": [
+      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/Negro_Drill caro.jpeg"]},
+      {"color_nombre": "Rojo","hex": "#FF0000","fotos": ["Assets/Rojo_Drill caro1.jpeg","Assets/Rojo_Drill caro2.jpeg","Assets/Rojo_Drill caro3.jpeg"]},
+      {"color_nombre": "Blanco","hex": "#FFFFFF","fotos": ["Assets/Blanco_Drill caro.jpeg","Assets/Blanco_Drill caro2.jpeg","Assets/Blanco_Drill caro3.jpeg"]},
+      {"color_nombre": "Cafe","hex": "#8B4513","fotos": ["Assets/Cafe_Drill caro.jpeg"]},
+      {"color_nombre": "Verde","hex": "#006400","fotos": ["Assets/Verde_Drill caro1.jpeg","Assets/Verde_Drill caro2.jpeg","Assets/Verde_Drill caro3.jpeg"]}]
   }
 ]
