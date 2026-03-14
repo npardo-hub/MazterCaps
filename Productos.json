@@ -8,9 +8,9 @@
     "precio_mayoreo": 5000,
     "stock_total": 1,
     "medidas": {
-      "circunferencia": "20 cm",
-      "altura": "11.5 cm",
-      "visera": "7 cm"
+      "circunferencia": "53 cm",
+      "altura": "16 cm",
+      "visera": "7.5 cm"
     },
     "colores": [
       {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_5paneles.jpeg"]}]},
@@ -21,11 +21,11 @@
     "tipo_paneles": 6,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
     "precio_mayoreo": 7000,
-    "stock_total": 1,
+    "stock_total": 0,
     "medidas": {
-      "circunferencia": "20 cm",
-      "altura": "11.5 cm",
-      "visera": "7 cm"
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
     },
     "colores": [
       {"color_nombre": "Verde Militar","hex": "#4B5320","fotos": ["Assets/Militar1.jpeg"]},
@@ -39,9 +39,9 @@
     "precio_mayoreo": 6500,
     "stock_total": 1,
     "medidas": {
-      "circunferencia": "20 cm",
-      "altura": "11.5 cm",
-      "visera": "7 cm"
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
     },
     "colores": [
       {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_PanoAcrilico.jpeg"]}]},
@@ -54,9 +54,9 @@
     "precio_mayoreo": 6000,
     "stock_total": 1,
     "medidas": {
-      "circunferencia": "20 cm",
-      "altura": "11.5 cm",
-      "visera": "7 cm"
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
     },
     "colores": [
       { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/Azul Rey_Drill.jpeg"] },
@@ -88,9 +88,9 @@
     "precio_mayoreo": 6000,
     "stock_total": 1,
     "medidas": {
-      "circunferencia": "20 cm",
-      "altura": "11.5 cm",
-      "visera": "7 cm"
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
     },
     "colores": [
       {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/Negro_Drill caro.jpeg"]},
