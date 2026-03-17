@@ -58,7 +58,6 @@ body {
     text-transform: none;
 }
 
-/* Estilo de Botones (Modelos y Contacto) */
 .btn-header-minimal {
     background-color: transparent;
     color: white;
@@ -68,7 +67,7 @@ body {
     font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Espaciado premium */
+    letter-spacing: 2px;
     cursor: pointer;
     transition: var(--transition);
     font-family: inherit;
@@ -114,7 +113,7 @@ body {
     max-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain; /* Mantiene la proporción sin deformar */
+    object-fit: contain;
     transition: opacity 0.3s ease;
 }
 
@@ -122,7 +121,6 @@ body {
     opacity: 0;
 }
 
-/* Miniaturas uniformes */
 .thumbs-grid {
     display: flex;
     gap: 12px;
@@ -134,7 +132,7 @@ body {
 .miniatura {
     width: 75px;
     height: 75px;
-    object-fit: cover; /* Asegura que todas sean del mismo tamaño */
+    object-fit: cover;
     cursor: pointer;
     border: 2px solid #ddd;
     border-radius: 6px;
@@ -147,7 +145,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Medidas debajo de la foto */
 .info-adicional {
     display: flex;
     gap: 15px;
@@ -359,22 +356,26 @@ body {
 /* =========================================
    7. MENÚS Y MODALES
    ========================================= */
-.dropdown { position: relative; }
+.dropdown { 
+    position: relative; 
+}
+
 .dropdown-menu {
-    list-style: none; /* Elimina el punto (•) que se ve en tu captura */
+    list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 400px; /* Evita que el menú sea más largo que la pantalla */
-    overflow-y: auto; /* Añade scroll si tienes muchos productos */
+    max-height: 400px;
+    overflow-y: auto;
     background: white;
     border: 1px solid #eee;
-    width: 250px; /* Un poco más ancho para nombres largos */
+    width: 250px;
     position: absolute;
     top: calc(100% + 15px);
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     display: none;
+    z-index: 1100;
 }
 
 .dropdown-menu.active {
@@ -442,6 +443,7 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+
 .stock-status {
     font-size: 0.7rem;
     font-weight: bold;
@@ -461,6 +463,7 @@ body {
     background-color: #ffebee;
     color: #c62828;
 }
+
 /* =========================================
    8. RESPONSIVE
    ========================================= */
