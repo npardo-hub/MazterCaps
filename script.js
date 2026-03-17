@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const btnModelos = document.getElementById('btnModelos');
     const modelMenu = document.getElementById('modelMenu');
     const fotoPrincipal = document.getElementById('foto-principal');
@@ -74,8 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             selector.appendChild(div);
             if(i === 0) div.click();
         });
+     function actualizarHotspots(item) {
+        const ventanas = document.querySelectorAll('.ventana-flotante');
+        if(item.tipo_paneles === 5) {
+        ventanas[0].textContent = "Secado Ultra Rápido";}
+        }
     }
-    function resaltarInfografia(tipo) {
+     function resaltarInfografia(tipo) {
         const cards = document.querySelectorAll('.comp-card');
         if (cards.length >= 2) {
             cards.forEach(card => card.classList.remove('highlight'));
@@ -83,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (tipo === 6) cards[1].classList.add('highlight');
         }
     }
-    function actualizarVista(colorData) {
+      function actualizarVista(colorData) {
         fotoPrincipal.classList.add('fade-out');
         setTimeout(() => {
             fotoPrincipal.src = colorData.fotos[0];
