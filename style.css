@@ -470,6 +470,35 @@ body {
     background-color: #ffebee;
     color: #c62828;
 }
+.product-render-section {
+    padding: 60px 20px;
+    background-color: var(--white); /* O #f9f9f9 si prefieres que contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.render-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.render-img {
+    /* Tamaño Mediano Responsivo */
+    width: 100%;
+    max-width: 500px; /* Controla el tamaño máximo en PC */
+    height: auto;
+    display: inline-block;
+    
+    /* Efecto premium sutil */
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.render-img:hover {
+    transform: translateY(-10px) scale(1.02);
+}
 
 /* =========================================
    8. RESPONSIVE
@@ -491,5 +520,8 @@ body {
 
     .main-photo-card {
         height: 350px;
+    }
+   .render-img {
+        max-width: 80%;
     }
 }
