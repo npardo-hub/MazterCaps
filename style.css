@@ -416,10 +416,14 @@ body {
     color: #c62828;
 }
 .product-render-section {
-    padding: 120px 20px;
-    display: flex;
-    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
     overflow: visible;
+}
+.product-render-section .section-title {
+    margin-bottom: 60px;
+    display: block;
+    width: 100%;
 }
 .render-wrapper {
     position: relative;
@@ -446,6 +450,11 @@ body {
 .render-img:hover {
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.18)) blur(0px);
     transform: translateY(-5px);
+}
+.render-container-central {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .feat-tag {
     position: absolute;
