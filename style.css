@@ -558,9 +558,6 @@ CSS
     .main-photo-card {
         height: 350px;
     }
-    .brand-name {
-        display: none;
-    }
     .header-container {
         padding: 0 15px;
         display: grid;
