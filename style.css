@@ -536,106 +536,62 @@ body {
 /* =========================================
    8. RESPONSIVE
    ========================================= */
-Para que tu @media quede de manera "oficial" y organizada, debemos asegurar que las reglas se apliquen de forma jerárquica y sin conflictos. He unificado los ajustes del header (ocultar el nombre), el render de la gorra y las secciones informativas en un solo bloque coherente.
-
-Aquí tienes la versión final y optimizada para tu archivo CSS:
-
-CSS
-/* =========================================
-   8. RESPONSIVE (VERSIÓN FINAL OFICIAL)
-   ========================================= */
-@media (max-width: 900px) {
-    /* --- HEADER ESTILO APP --- */
+@media (max-width: 600px) {
+    /* --- HEADER (Tu configuración favorita) --- */
     .brand-name {
-        display: none !important; /* Mantenemos oculto para dar aire */
+        display: none;
+    }
+
+    .brand-group {
+        gap: 0;
     }
 
     .header-container {
-        display: flex;
-        justify-content: space-between;
         padding: 0 15px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 10px;
     }
 
     .btn-header-minimal {
-        padding: 8px 15px;
-        font-size: 0.7rem;
-        border-radius: 4px; /* Botones más táctiles */
-        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 12px;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
     }
 
-    /* --- REJILLA DE PRODUCTO --- */
-    .product-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .logo-img {
+        width: 35px;
     }
 
-    .main-photo-card {
-        height: 300px;
-        border-radius: 0; /* Estilo full-width para móvil */
-        margin: 0 -20px; /* Expande la foto a los bordes */
-    }
-
-    /* --- SECCIÓN RENDER (LAS 5 CARACTERÍSTICAS) --- */
-    .product-render-section {
-        padding: 50px 0;
-        background: var(--light-gray); /* Fondo sutil para separar secciones */
+    /* --- SECCIÓN RENDER Y CONTENIDO --- */
+    .product-grid, .story-grid, .comparison-grid {
+        display: block; /* Volvemos a lo más simple: uno bajo otro */
     }
 
     .render-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        gap: 10px;
     }
 
     .render-img {
-        max-width: 260px;
-        margin-bottom: 30px;
+        max-width: 280px;
+        margin-bottom: 20px;
     }
 
-    /* Tags como botones de información centrados */
+    /* Los tags ahora se apilan de forma natural sin complicaciones */
     .feat-tag {
         position: static !important;
         transform: none !important;
-        display: block;
-        width: 85%;
-        margin: 6px auto !important;
-        padding: 12px;
-        text-align: center;
-        font-size: 0.75rem;
-        background: var(--white);
-        border-left: 5px solid var(--camel);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin: 5px auto !important;
+        display: table; /* Mantiene el ancho ajustado al texto */
+        font-size: 0.7rem;
     }
 
-    /* --- SECCIONES INFORMATIVAS --- */
-    .story-grid, 
-    .comparison-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .story-card {
-        padding: 25px; /* Menos padding para no alargar la página */
-    }
-
-    /* --- SIDEBAR DE COMPRA (OPCIONES) --- */
-    .options-sidebar {
-        padding: 20px;
-        border-radius: 15px 15px 0 0; /* Efecto de tarjeta que sube */
-        margin-top: -20px;
-        background: var(--white);
-        box-shadow: 0 -10px 20px rgba(0,0,0,0.05);
-    }
-
-    .price-display {
-        font-size: 1.8rem;
-    }
-
-    .color-grid {
-        grid-template-columns: repeat(5, 1fr); /* Más colores por fila en móvil */
-        gap: 10px;
+    .main-photo-card {
+        height: 350px;
     }
 }
