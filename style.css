@@ -1,6 +1,3 @@
-/* =========================================
-   1. VARIABLES Y BASE PREMIUM
-   ========================================= */
 :root {
     --camel: #C19A6B;
     --white: #ffffff;
@@ -8,7 +5,6 @@
     --light-gray: #f4f4f4;
     --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -17,10 +13,6 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
-
-/* =========================================
-   2. HEADER Y BOTONES MINIMALISTAS
-   ========================================= */
 .main-header {
     background-color: var(--camel);
     padding: 15px 0;
@@ -29,7 +21,6 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,27 +29,21 @@ body {
     align-items: center;
     padding: 0 20px;
 }
-
 .brand-group {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-
 .logo-img {
     width: 42px;
     height: auto;
 }
-
 .brand-name {
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
     letter-spacing: 1px;
-    text-transform: none;
 }
-
-/* Estilo de Botones (Modelos y Contacto) */
 .btn-header-minimal {
     background-color: transparent;
     color: white;
@@ -68,120 +53,68 @@ body {
     font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Espaciado premium */
+    letter-spacing: 2px;
     cursor: pointer;
     transition: var(--transition);
-    font-family: inherit;
 }
-
 .btn-header-minimal:hover {
     background-color: white;
     color: var(--camel);
-    border-color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transform: translateY(-1px);
 }
-
-/* =========================================
-   3. GALERÍA (CORRECCIÓN DE ENCUADRE)
-   ========================================= */
 .page-wrapper {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
-
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 40px;
 }
-
 .main-photo-card {
     background: var(--light-gray);
     border-radius: 12px;
-    height: 480px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    overflow: hidden;
+    position: relative;
     border: 1px solid #eee;
+    overflow: hidden;
 }
-
 #foto-principal {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain; /* Mantiene la proporción sin deformar */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
     transition: opacity 0.3s ease;
 }
-
-.fade-out {
-    opacity: 0;
-}
-
-/* Miniaturas uniformes */
 .thumbs-grid {
     display: flex;
     gap: 12px;
     margin: 20px 0;
     justify-content: center;
-    flex-wrap: wrap;
 }
-/* Etiqueta de disponibilidad */
-.stock-status {
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 3px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.status-disponible {
-    background-color: #e8f5e9;
-    color: #2e7d32;
-}
-
-.status-agotado {
-    background-color: #ffebee;
-    color: #c62828;
-}
-
-/* Estilo para el botón cuando no hay stock */
-.btn-whatsapp.disabled {
-    background-color: #ccc;
-    pointer-events: none; /* Evita que hagan clic */
-    filter: grayscale(1);
-}
-
 .miniatura {
     width: 75px;
     height: 75px;
-    object-fit: cover; /* Asegura que todas sean del mismo tamaño */
+    object-fit: cover;
     cursor: pointer;
     border: 2px solid #ddd;
     border-radius: 6px;
     background: white;
-    transition: all 0.2s ease;
+    transition: var(--transition);
 }
-
-.miniatura:hover {
+.miniatura:hover, .miniatura.active {
     border-color: var(--camel);
     transform: scale(1.05);
 }
-
-/* Medidas debajo de la foto */
 .info-adicional {
     display: flex;
     gap: 15px;
     margin-top: 30px;
-    justify-content: center;
 }
-
 .cajon-info {
     flex: 1;
     background: white;
@@ -189,9 +122,7 @@ body {
     padding: 15px;
     text-align: center;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 }
-
 .cajon-info small {
     display: block;
     color: var(--camel);
@@ -200,92 +131,69 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
-.cajon-info span {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-/* =========================================
-   4. SIDEBAR Y OPCIONES
-   ========================================= */
+.cajon-info span { font-weight: 600; font-size: 1.1rem; }
 .options-sidebar {
     background: var(--light-gray);
     padding: 30px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: fit-content;
 }
-
+.options-top h2 { margin-top: 0; font-size: 1.8rem; }
+.options-top h3 { 
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    color: #888; 
+    margin-top: 25px;
+}
 .color-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
-
 .burbuja-color {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s;
 }
-
 .burbuja-color.active {
     border-color: var(--camel);
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
-
 .price-display {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    text-align: center;
-    margin: 10px 0;
     color: var(--text);
-}
-
-.legal-info {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: center;
 }
-
-.import-note {
-    font-size: 0.7rem;
-    color: #888;
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: 0.3s;
 }
-
-.tax-note {
-    font-size: 0.75rem;
-    text-align: center;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* =========================================
-   5. SECCIONES INFORMATIVAS (INGENIERÍA)
-   ========================================= */
-.brand-story-section {
-    padding: 80px 20px;
-    background: #f9f9f9;
-}
-
+.btn-whatsapp:hover { filter: brightness(1.1); }
+.brand-story-section { padding: 80px 20px; background: #f9f9f9; }
 .section-title {
     text-align: center;
     color: var(--camel);
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 50px;
-    font-size: 1.6rem;
 }
-
 .story-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -293,33 +201,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .story-card {
     background: white;
     padding: 40px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-    transition: transform 0.3s;
 }
-
-.story-card:hover {
-    transform: translateY(-5px);
-}
-
-.story-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-/* =========================================
-   6. INFOGRAFÍA COMPARATIVA (5 VS 6 GAJOS)
-   ========================================= */
-.comparison-section {
-    padding: 80px 20px;
-    background: white;
-}
-
+.comparison-section { padding: 80px 20px; background: white; }
 .comparison-grid {
     display: flex;
     align-items: center;
@@ -328,102 +217,47 @@ body {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 .comp-card {
     flex: 1;
     background: var(--light-gray);
-    padding: 45px;
-    border-radius: 4px;
-    border: 1px solid #eee;
+    padding: 40px;
+    border-radius: 8px;
 }
-
 .comp-card.highlight {
     border: 1px solid var(--camel);
     background: white;
-    box-shadow: 0 10px 40px rgba(193, 154, 107, 0.1);
+    box-shadow: 0 10px 30px rgba(193, 154, 107, 0.1);
 }
-
 .badge {
     background: var(--camel);
     color: white;
-    padding: 5px 12px;
+    padding: 4px 12px;
     font-size: 0.6rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 15px;
 }
-
-.comp-list {
+.dropdown-menu {
+    position: absolute;
+    background: white;
     list-style: none;
     padding: 0;
-    margin-top: 20px;
-}
-
-.comp-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 0.85rem;
-    color: #555;
-}
-
-.comp-list li strong {
-    display: block;
-    color: var(--camel);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-}
-
-.vs-divider {
-    font-weight: 900;
-    color: #ddd;
-    font-style: italic;
-    font-size: 1.4rem;
-}
-
-/* =========================================
-   7. MENÚS Y MODALES
-   ========================================= */
-.dropdown { position: relative; }
-
-.dropdown-menu {
-    list-style: none; /* Elimina el punto (•) que se ve en tu captura */
-    padding: 0;
     margin: 0;
-    max-height: 400px; /* Evita que el menú sea más largo que la pantalla */
-    overflow-y: auto; /* Añade scroll si tienes muchos productos */
-    background: white;
-    border: 1px solid #eee;
-    width: 250px; /* Un poco más ancho para nombres largos */
-    position: absolute;
+    width: 220px;
     top: calc(100% + 15px);
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     display: none;
+    z-index: 1100;
 }
-
-.dropdown-menu.active {
-    display: block;
-}
-
+.dropdown-menu.active { display: block; }
 .dropdown-menu li {
-    padding: 12px 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f4f4f4;
     cursor: pointer;
-    font-size: 0.85rem;
-    border-bottom: 1px solid #f9f9f9;
-    color: var(--text);
-    text-align: left;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
-
-.dropdown-menu li:hover {
-    background: var(--light-gray);
-    color: var(--camel);
-}
-
+.dropdown-menu li:hover { background: var(--light-gray); color: var(--camel); }
 .modal {
     display: none;
     position: fixed;
@@ -431,119 +265,24 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     z-index: 2000;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
-
 .modal-content {
     background: white;
     width: 90%;
-    max-width: 400px;
-    margin: 10% auto;
+    max-width: 450px;
+    margin: 8% auto;
     padding: 40px;
-    border-radius: 8px;
-    border-top: 6px solid var(--camel);
-    position: relative;
+    border-radius: 12px;
     text-align: center;
-}
-
-.close-modal {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #aaa;
-}
-.infografia-interactiva {
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
 }
-
-.contenedor-render {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.render-principal {
-    width: 80%;
-    height: auto;
-    z-index: 1;
-}
-
-/* Estilo de las Ventanas Flotantes */
-.hotspot {
-    position: absolute;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.ventana-flotante {
-    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px; /* Bordes curvos como la referencia */
-    font-size: 0.8rem;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.ventana-flotante:hover {
-    transform: scale(1.1) translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.5);
-}
-
-/* Líneas de conexión (opcional, ajustables) */
-.linea-conexion {
-    position: absolute;
-    height: 1px;
-    background-color: #333;
-    pointer-events: none;
-    opacity: 0.4;
-}
-
-.btn-whatsapp {
-    background: #25D366;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-/* =========================================
-   8. RESPONSIVE
-   ========================================= */
 @media (max-width: 900px) {
-    .product-grid {
+    .product-grid, .story-grid, .comparison-grid {
         grid-template-columns: 1fr;
     }
-    
-    .story-grid, .comparison-grid {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-    }
-    
-    .vs-divider {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .main-photo-card {
-        height: 350px;
-    }
+    .comparison-grid { flex-direction: column; }
+    .vs-divider { margin: 20px 0; }
 }
