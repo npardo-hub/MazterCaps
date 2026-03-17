@@ -471,87 +471,99 @@ body {
     color: #c62828;
 }
 .product-render-section {
-    padding: 80px 20px;
-    background-color: var(--white);
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: visible; /* Importante para que los tags no se corten al salir del div */
 }
 
-.render-main-container {
+/* El "ancla" de todo el diseño */
+.render-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Tamaño de la gorra en PC */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.render-col {
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /* Espacio vertical entre etiquetas */
-    flex: 1;
-}
-
-.render-col.left { text-align: right; }
-.render-col.right { text-align: left; }
-
-.render-img-center {
-    flex: 2;
-    display: flex;
-    justify-content: center;
 }
 
 .render-img {
     width: 100%;
-    max-width: 400px;
     height: auto;
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.15));
 }
 
-/* Estilo de las etiquetas mejorado */
+/* Estilo de los Tags (Ficha Técnica) */
 .feat-tag {
-    display: inline-block;
+    position: absolute;
     background: white;
-    padding: 10px 18px;
+    padding: 10px 15px;
     border-radius: 4px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
     color: var(--text);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     border-left: 4px solid var(--camel);
-    white-space: nowrap;
+    white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+    z-index: 5;
+}
+.t-top-left {
+    top: -40px;
+    left: -80px;
+}
+
+.t-top-right {
+    top: -40px;
+    right: -80px;
+}
+
+.t-mid-right {
+    top: 50%;
+    right: -130px;
+    transform: translateY(-50%);
+}
+
+.t-bottom-left {
+    bottom: 20px;
+    left: -120px;
+}
+
+.t-bottom-right {
+    bottom: -30px;
+    right: -50px;
 }
 /* =========================================
    8. RESPONSIVE
    ========================================= */
 @media (max-width: 900px) {
-    .render-main-container {
-        flex-direction: column; /* Apila todo verticalmente */
-        gap: 30px;
-    }
     .product-grid {
         grid-template-columns: 1fr;
     }
     .product-render-section {
-        padding: 40px 10px;
+        padding: 60px 20px;
     }
-   .feat-tag {
-        font-size: 0.65rem;
-        padding: 8px 12px;
-        white-space: normal; /* Permite que el texto baje si es muy largo */
-        max-width: 140px;
-    }
-   .render-container {
+   .render-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
+    }
+   .feat-tag {
+        position: static !important; /* Quita el modo "órbita" en móvil */
+        transform: none !important;
+        text-align: center;
+        width: fit-content;
+        margin: 5px auto;
+    }
+   .render-img {
+        order: -1;
+        max-width: 300px;
+        margin-bottom: 20px;
     }
     .story-grid, .comparison-grid {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
-    
     .vs-divider {
         margin: 20px 0;
         text-align: center;
@@ -559,17 +571,6 @@ body {
 
     .main-photo-card {
         height: 350px;
-    }
-   .render-img-center {
-        order: 1; /* Imagen arriba */
-    }
-   .render-col {
-        order: 2; /* Etiquetas abajo */
-        text-align: center !important;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
     }
    .header-container {
         padding: 0 15px;
