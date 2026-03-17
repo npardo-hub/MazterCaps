@@ -71,6 +71,52 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
+.infografia-interactiva {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.contenedor-render {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.render-principal {
+    width: 80%;
+    height: auto;
+    z-index: 1;
+}
+.hotspot {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+.ventana-flotante {
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ventana-flotante:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.5);
+}
+.linea-conexion {
+    position: absolute;
+    height: 1px;
+    background-color: #333;
+    pointer-events: none;
+    opacity: 0.4;
+}
 .stock-status {
     font-size: 0.7rem;
     font-weight: bold;
