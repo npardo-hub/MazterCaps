@@ -435,6 +435,32 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+.contenedor-render-infografia {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.img-render-base {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.punto-info-render {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    pointer-events: none;
+}
 
 /* =========================================
    8. RESPONSIVE
