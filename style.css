@@ -524,4 +524,20 @@ body {
    .render-img {
         max-width: 80%;
     }
+   .header-container {
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: auto 1fr auto; /* Logo | Espacio Central | Contacto */
+        align-items: center;
+        gap: 10px;
+    }
+   .btn-header-minimal {
+        padding: 8px 12px; /* Reducimos el padding lateral */
+        font-size: 0.65rem; /* Fuente ligeramente más pequeña */
+        letter-spacing: 1px; /* Menos espacio entre letras para que quepan */
+        white-space: nowrap; /* Evita que el texto salte de línea */
+    }
+   .logo-img {
+        width: 35px;
+    }
 }
