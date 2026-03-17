@@ -545,81 +545,97 @@ CSS
    8. RESPONSIVE (VERSIÓN FINAL OFICIAL)
    ========================================= */
 @media (max-width: 900px) {
-    /* 1. Reset de Grillas: Obligamos a una sola columna */
-    .product-grid, 
-    .story-grid, 
-    .comparison-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        grid-template-columns: 1fr !important;
-        gap: 30px;
-    }
-
-    /* 2. Header: Limpieza total para que no se amontone */
+    /* --- HEADER ESTILO APP --- */
     .brand-name {
-        display: none !important; /* Eliminamos el texto de la marca */
+        display: none !important; /* Mantenemos oculto para dar aire */
     }
 
     .header-container {
-        padding: 0 10px;
+        display: flex;
         justify-content: space-between;
+        padding: 0 15px;
     }
 
     .btn-header-minimal {
-        padding: 8px 12px;
-        font-size: 0.6rem;
-        letter-spacing: 0.5px;
+        padding: 8px 15px;
+        font-size: 0.7rem;
+        border-radius: 4px; /* Botones más táctiles */
+        background: rgba(255, 255, 255, 0.1);
     }
 
-    /* 3. Render de Gorra (Sección de Tags): Reparación de visibilidad */
+    /* --- REJILLA DE PRODUCTO --- */
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-photo-card {
+        height: 300px;
+        border-radius: 0; /* Estilo full-width para móvil */
+        margin: 0 -20px; /* Expande la foto a los bordes */
+    }
+
+    /* --- SECCIÓN RENDER (LAS 5 CARACTERÍSTICAS) --- */
     .product-render-section {
-        padding: 40px 15px;
-        overflow: hidden;
+        padding: 50px 0;
+        background: var(--light-gray); /* Fondo sutil para separar secciones */
     }
 
     .render-wrapper {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .render-img {
-        max-width: 250px; /* Tamaño ideal para pantalla de celular */
-        height: auto;
-        margin-bottom: 25px;
-        order: -1; /* Forzamos a que la imagen esté arriba */
+        max-width: 260px;
+        margin-bottom: 30px;
     }
 
-    /* Forzamos a los Tags a comportarse como lista */
+    /* Tags como botones de información centrados */
     .feat-tag {
-        position: relative !important; /* Cambiamos de absolute a relative */
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
+        position: static !important;
         transform: none !important;
-        display: block !important;
-        width: 90% !important; /* Casi todo el ancho del cel */
-        max-width: 280px;
-        margin: 5px auto !important;
+        display: block;
+        width: 85%;
+        margin: 6px auto !important;
+        padding: 12px;
         text-align: center;
-        box-sizing: border-box;
+        font-size: 0.75rem;
+        background: var(--white);
+        border-left: 5px solid var(--camel);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    /* 4. Galería y otros ajustes */
-    .main-photo-card {
-        height: 300px;
+    /* --- SECCIONES INFORMATIVAS --- */
+    .story-grid, 
+    .comparison-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
+    .story-card {
+        padding: 25px; /* Menos padding para no alargar la página */
+    }
+
+    /* --- SIDEBAR DE COMPRA (OPCIONES) --- */
     .options-sidebar {
         padding: 20px;
+        border-radius: 15px 15px 0 0; /* Efecto de tarjeta que sube */
+        margin-top: -20px;
+        background: var(--white);
+        box-shadow: 0 -10px 20px rgba(0,0,0,0.05);
     }
 
-    .vs-divider {
-        margin: 15px 0;
-        display: block;
+    .price-display {
+        font-size: 1.8rem;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(5, 1fr); /* Más colores por fila en móvil */
+        gap: 10px;
     }
 }
