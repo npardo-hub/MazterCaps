@@ -81,6 +81,45 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transform: translateY(-1px);
 }
+.contenedor-render-infografia {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 2. Imagen base del render */
+.img-render-base {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 3. Estilo de las etiquetas (Hotspots) */
+.punto-info-render {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%); /* Asegura que el centro sea la coordenada */
+    
+    /* Estética original solicitada */
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    pointer-events: none; /* Evita que bloqueen clics en otros elementos */
+}
+
+/* 4. Ajuste responsivo solo para los hotspots */
+@media (max-width: 600px) {
+    .punto-info-render {
+        font-size: 0.6rem;
+        padding: 4px 10px;
+    }
+}
 
 /* =========================================
    3. GALERÍA (CORRECCIÓN DE ENCUADRE)
@@ -177,59 +216,6 @@ body {
 .cajon-info span {
     font-weight: 600;
     font-size: 1.1rem;
-}
-.page-wrapper {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 40px;
-}
-
-.main-photo-card {
-    background: var(--light-gray);
-    border-radius: 12px;
-    min-height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    position: relative; /* Base para el canvas */
-}
-
-/* CONTENEDOR DE HOTSPOTS (AISLADO) */
-.canvas-interactivo {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-}
-
-.render-infografia {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    pointer-events: none;
-}
-
-.etiqueta-render {
-    position: absolute;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-    pointer-events: auto;
 }
 
 /* =========================================
