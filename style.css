@@ -435,11 +435,37 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+.main-photo-card {
+    position: relative; 
+}
+
+.punto-info-render {
+    position: absolute;
+    z-index: 5; /* Por debajo del header (1000) pero sobre la imagen */
+    transform: translate(-50%, -50%);
+    background: var(--camel); /* Usamos tu variable camel */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    pointer-events: none; /* No estorba al hacer clic en la imagen */
+    animation: pulseHotspot 2s infinite;
+}
+
+@keyframes pulseHotspot {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.05); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
 
 /* =========================================
    8. RESPONSIVE
    ========================================= */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .product-grid {
         grid-template-columns: 1fr;
     }
@@ -457,4 +483,8 @@ body {
     .main-photo-card {
         height: 350px;
     }
+    .punto-info-render {
+        font-size: 0.55rem;
+        padding: 4px 8px;
+    }
 }
