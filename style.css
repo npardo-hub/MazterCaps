@@ -476,12 +476,11 @@ body {
     justify-content: center;
     overflow: visible; /* Importante para que los tags no se corten al salir del div */
 }
-
-/* El "ancla" de todo el diseño */
 .render-wrapper {
     position: relative;
     width: 100%;
-    max-width: 500px; /* Tamaño de la gorra en PC */
+    max-width: 450px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,42 +502,46 @@ body {
 .feat-tag {
     position: absolute;
     background: white;
-    padding: 10px 15px;
+    padding: 8px 14px;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--text);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     border-left: 4px solid var(--camel);
-    white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+    white-space: nowrap;
     z-index: 5;
 }
-.t-top-left {
-    top: -40px;
-    left: -80px;
-}
-
-.t-top-right {
-    top: -40px;
-    right: -80px;
-}
-
-.t-mid-right {
+.feat-tag::before {
+    content: "";
+    position: absolute;
+    background: var(--camel);
+    height: 1px;
+    width: 30px;
     top: 50%;
-    right: -130px;
-    transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0.5;
+}
+.t-top-left, .t-bottom-left {
+    left: -40px;
+}
+.t-top-left::before, .t-bottom-left::before {
+    right: -30px;
 }
 
-.t-bottom-left {
-    bottom: 20px;
-    left: -120px;
+.t-top-right, .t-mid-right, .t-bottom-right {
+    right: -40px;
+}
+.t-top-right::before, .t-mid-right::before, .t-bottom-right::before {
+    left: -30px;
 }
 
-.t-bottom-right {
-    bottom: -30px;
-    right: -50px;
-}
+.t-top-left { top: 10%; }
+.t-top-right { top: 5%; }
+.t-mid-right { top: 50%; transform: translateY(-50%); right: -90px; }
+.t-bottom-left { bottom: 20%; }
+.t-bottom-right { bottom: 5%; }
 /* =========================================
    8. RESPONSIVE
    ========================================= */
@@ -574,6 +577,7 @@ body {
     }
     .feat-tag {
         position: static !important;
+        margin: 5px auto !important;
         transform: none !important;
         display: inline-block !important;
         margin: 5px !important;
@@ -581,6 +585,9 @@ body {
         font-size: 0.65rem;
         width: auto;
         border-left: 3px solid var(--camel);
+    }
+   .feat-tag::before {
+        display: none !important; /* Quitamos las líneas en móvil */
     }
     .main-photo-card {
         height: 350px;
