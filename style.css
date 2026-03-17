@@ -523,25 +523,27 @@ body {
     opacity: 0.5;
     z-index: -1;
     top: 50%;
-    transform-origin: 0 0;
 }
 .t-top-left { top: 0%; left: -100px; }
 .t-top-left::after {
-    right: -100%;
-    width: 140px;
-    transform: rotate(25deg);
+    right: -140px; /* Longitud del puente */
+    width: 140px; 
+    transform: rotate(28deg); /* Ángulo hacia abajo/centro */
+    transform-origin: left; /* La rotación nace desde el tag */
 }
 .t-bottom-left { bottom: 15%; left: -120px; }
 .t-bottom-left::after {
-    right: -100%;
+    right: -160px;
     width: 160px;
-    transform: rotate(-15deg);
+    transform: rotate(-18deg); /* Ángulo hacia arriba/centro */
+    transform-origin: left;
 }
 .t-top-right { top: 0%; right: -100px; }
 .t-top-right::after {
-    left: -100%;
+    left: -140px;
     width: 140px;
-    transform: rotate(-25deg);
+    transform: rotate(-28deg); /* Ángulo hacia abajo/centro */
+    transform-origin: right; /* La rotación nace desde el tag */
 }
 .t-mid-right { 
     top: 50%; 
@@ -549,15 +551,17 @@ body {
     transform: translateY(-50%); 
 }
 .t-mid-right::after {
-    left: -80%;
+    left: -160px;
     width: 160px;
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Línea recta al centro */
+    transform-origin: right;
 }
 .t-bottom-right { bottom: 0%; right: -80px; }
 .t-bottom-right::after {
-    left: -120%;
+    left: -150px;
     width: 150px;
-    transform: rotate(20deg);
+    transform: rotate(22deg); /* Ángulo hacia arriba/centro */
+    transform-origin: right;
 }
 /* =========================================
    8. RESPONSIVE
