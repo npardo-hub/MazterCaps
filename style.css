@@ -21,25 +21,32 @@ body {
 }
 
 /* =========================================
-   2. HEADER Y NAVEGACIÓN
+   2. HEADER REVISADO (ALINEACIÓN PREMIUM)
    ========================================= */
 .main-header {
     background-color: var(--camel);
-    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 75px;
+    display: flex;
+    align-items: center;
 }
 
 .header-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Izquierda - Centro - Derecha */
     align-items: center;
-    padding: 0 20px;
+    padding: 0 25px;
 }
+
+.header-left { display: flex; align-items: center; }
+.header-center { display: flex; justify-content: center; }
+.header-right { display: flex; justify-content: flex-end; }
 
 .brand-group {
     display: flex;
@@ -47,25 +54,30 @@ body {
     gap: 12px;
 }
 
-.logo-img { width: 42px; height: auto; }
+.logo-img {
+    height: 48px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
 
 .brand-name {
     color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .btn-header-minimal {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 10px 26px;
-    border-radius: 2px;
-    font-size: 0.7rem;
-    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: var(--transition);
 }
@@ -73,10 +85,11 @@ body {
 .btn-header-minimal:hover {
     background-color: white;
     color: var(--camel);
+    transform: translateY(-2px);
 }
 
 /* =========================================
-   3. ÁREA DE PRODUCTO (GRID PRINCIPAL)
+   3. ÁREA DE PRODUCTO Y DISPONIBILIDAD
    ========================================= */
 .page-wrapper {
     max-width: 1200px;
@@ -104,25 +117,6 @@ body {
 
 #foto-principal { max-width: 90%; max-height: 90%; object-fit: contain; }
 
-.thumbs-grid {
-    display: flex;
-    gap: 12px;
-    margin: 20px 0;
-    justify-content: center;
-}
-
-.miniatura {
-    width: 75px; height: 75px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    transition: var(--transition);
-}
-
-.miniatura.active { border-color: var(--camel); }
-
-/* Disponibilidad */
 .stock-status {
     font-size: 0.65rem;
     font-weight: 700;
@@ -142,7 +136,11 @@ body {
     color: var(--success);
     border: 1px solid rgba(39, 174, 96, 0.2);
 }
-.status-disponible::before { background-color: var(--success); box-shadow: 0 0 8px rgba(39, 174, 96, 0.6); animation: blink 2s infinite; }
+.status-disponible::before { 
+    background-color: var(--success); 
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.6); 
+    animation: blink 2s infinite; 
+}
 
 .status-agotado {
     background-color: rgba(231, 76, 60, 0.1);
@@ -156,16 +154,9 @@ body {
 /* =========================================
    4. INGENIERÍA INTERACTIVA (HOTSPOTS)
    ========================================= */
-.infografia-master {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-}
-
 .canvas-interactivo {
     position: relative;
     display: inline-block;
-    max-width: 100%;
 }
 
 .render-infografia { display: block; width: 100%; height: auto; }
@@ -197,20 +188,46 @@ body {
 }
 
 /* =========================================
-   5. SECCIONES Y MODALES
+   5. SECCIONES DE CONTENIDO
    ========================================= */
 .options-sidebar { background: var(--light-gray); padding: 30px; border-radius: 12px; }
-.price-display { font-size: 2.5rem; font-weight: 800; margin: 20px 0; text-align: center; }
+.price-display { font-size: 2.6rem; font-weight: 800; margin: 15px 0; text-align: center; color: var(--text); }
 
 .brand-story-section { padding: 80px 20px; background: #f9f9f9; }
 .section-title { text-align: center; color: var(--camel); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
 
-.story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; }
-.story-card { background: white; padding: 40px; text-align: center; border-radius: 8px; }
+.story-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
 
-.comparison-grid { display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 1100px; margin: 0 auto; }
-.comp-card { flex: 1; background: var(--light-gray); padding: 40px; border-radius: 8px; }
+.story-card { 
+    background: white; 
+    padding: 40px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
 
-@media (max-width: 900px) {
-    .product-grid, .story-grid, .comparison-grid { grid-template-columns: 1fr; flex-direction: column; }
+/* =========================================
+   6. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr auto;
+    }
+    .brand-name { display: none; } /* Solo logo en móvil para ahorrar espacio */
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-photo-card {
+        height: 350px;
+    }
 }
