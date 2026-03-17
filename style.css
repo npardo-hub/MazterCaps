@@ -279,6 +279,65 @@ body {
     text-align: center;
     position: relative;
 }
+.canvas-interactivo {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.render-infografia {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hotspot {
+    position: absolute;
+    z-index: 10;
+    margin: 0; 
+    transform: translate(-50%, -50%);
+}
+.ventana-flotante {
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+.pulso-interactivo {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pulso-interactivo::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulso-efecto 2s infinite;
+}
+
+@keyframes pulso-efecto {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(3); opacity: 0; }
+}
+.hotspot:nth-child(2) { top: 25% !important; left: 15% !important; } /* Secado Rápido */
+.hotspot:nth-child(3) { top: 15% !important; left: 50% !important; } /* Reflectivos */
+.hotspot:nth-child(4) { top: 20% !important; right: 15% !important; left: auto !important; } /* SPF 50 */
 @media (max-width: 900px) {
     .product-grid, .story-grid, .comparison-grid {
         grid-template-columns: 1fr;
