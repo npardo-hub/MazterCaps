@@ -241,17 +241,23 @@ body {
     z-index: 10;
     transform: translate(-50%, -50%);
 }
+.ventana-flotante.v-derecha {
+    left: 20px;
+    transform: translateY(-50%);
+}
+.ventana-flotante.v-izquierda {
+    right: 20px;
+    transform: translateY(-50%);
+}
+.ventana-flotante.v-centro {
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .ventana-flotante {
-    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
+    position: absolute;
+    pointer-events: none;
+}
 }
 .pulso-interactivo {
     width: 12px;
