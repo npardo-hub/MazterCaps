@@ -557,21 +557,24 @@ body {
         display: block;
     }
     .render-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
     }
     .render-img {
-        max-width: 280px;
-        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto 25px auto;
+        max-width: 260px;
     }
     .feat-tag {
-        position: static;
-        transform: none;
-        margin: 5px auto;
-        display: table;
-        font-size: 0.7rem;
+        position: static !important;
+        transform: none !important;
+        display: inline-block !important;
+        margin: 5px !important;
+        padding: 8px 12px;
+        font-size: 0.65rem;
+        width: auto;
+        border-left: 3px solid var(--camel);
     }
     .main-photo-card {
         height: 350px;
