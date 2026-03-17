@@ -440,22 +440,17 @@ body {
    8. RESPONSIVE
    ========================================= */
 @media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .story-grid, .comparison-grid {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-    }
-    
-    .vs-divider {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .main-photo-card {
-        height: 350px;
-    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .main-photo-card {
+        height: 350px;
+    }
 }
+
+@media (max-width: 600px) {
+    .punto-info-render {
+        font-size: 0.6rem;
+        padding: 4px 10px;
+    }
 }
