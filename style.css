@@ -435,27 +435,6 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
-.punto-info-render {
-    position: absolute;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    background: var(--camel); /* Color café de tu marca */
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    pointer-events: none; /* Para que no interfiera con clics en la gorra */
-    animation: flotarHotspot 3s ease-in-out infinite;
-}
-
-@keyframes flotarHotspot {
-    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-    50% { transform: translate(-50%, -50%) translateY(-5px); }
-}
 
 /* =========================================
    8. RESPONSIVE
@@ -478,8 +457,4 @@ body {
     .main-photo-card {
         height: 350px;
     }
-    .punto-info-render {
-        font-size: 0.55rem;
-        padding: 4px 10px;
-    }
 }
