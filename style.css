@@ -537,15 +537,6 @@ body {
    8. RESPONSIVE
    ========================================= */
 @media (max-width: 600px) {
-    /* --- HEADER (Tu configuración favorita) --- */
-    .brand-name {
-        display: none;
-    }
-
-    .brand-group {
-        gap: 0;
-    }
-
     .header-container {
         padding: 0 15px;
         display: grid;
@@ -553,44 +544,35 @@ body {
         align-items: center;
         gap: 10px;
     }
-
     .btn-header-minimal {
         padding: 8px 12px;
         font-size: 0.65rem;
         letter-spacing: 1px;
         white-space: nowrap;
     }
-
     .logo-img {
         width: 35px;
     }
-
-    /* --- SECCIÓN RENDER Y CONTENIDO --- */
     .product-grid, .story-grid, .comparison-grid {
-        display: block; /* Volvemos a lo más simple: uno bajo otro */
+        display: block;
     }
-
     .render-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
     .render-img {
         max-width: 280px;
         margin-bottom: 20px;
     }
-
-    /* Los tags ahora se apilan de forma natural sin complicaciones */
     .feat-tag {
-        position: static !important;
-        transform: none !important;
-        margin: 5px auto !important;
-        display: table; /* Mantiene el ancho ajustado al texto */
+        position: static;
+        transform: none;
+        margin: 5px auto;
+        display: table;
         font-size: 0.7rem;
     }
-
     .main-photo-card {
         height: 350px;
     }
