@@ -19,13 +19,13 @@
             
             <div class="header-center">
                 <div class="dropdown">
-                    <button id="btnModelos" class="btn-header-minimal">Modelos</button>
+                    <button id="btnModelos" class="btn-header-minimal">Tipos de Materiales</button>
                     <ul id="modelMenu" class="dropdown-menu"></ul>
                 </div>
             </div>
 
             <div class="header-right">
-                <button class="btn-header-minimal btn-contacto">Contacto</button>
+                <button id="openContact" class="btn-header-minimal">Contacto</button>
             </div>
         </div>
     </header>
@@ -34,30 +34,44 @@
         <div class="product-grid">
             <section class="gallery-section">
                 <div class="main-photo-card">
-                    <img id="foto-principal" src="" alt="Producto">
+                    <img id="foto-principal" src="" alt="Gorra Premium">
                 </div>
+                
                 <div id="miniaturas-container" class="thumbs-grid"></div>
 
                 <div class="info-adicional">
-                    <div class="cajon-info"><small>Circunferencia</small><span>--</span></div>
-                    <div class="cajon-info"><small>Altura</small><span>--</span></div>
-                    <div class="cajon-info"><small>Visera</small><span>--</span></div>
+                    <div class="cajon-info">
+                        <small>Circunferencia</small>
+                        <span id="medida-circ">--</span>
+                    </div>
+                    <div class="cajon-info">
+                        <small>Altura</small>
+                        <span id="medida-alt">--</span>
+                    </div>
+                    <div class="cajon-info">
+                        <small>Visera</small>
+                        <span id="medida-vis">--</span>
+                    </div>
                 </div>
             </section>
 
             <aside class="options-sidebar">
                 <div class="options-top">
-                    <h2 id="product-name">--</h2>
+                    <h2 id="product-name">Cargando...</h2>
+                    <div id="stock-status" class="stock-status"></div>
+                    
                     <h3>Colores Disponibles</h3>
                     <div id="selector-colores" class="color-grid"></div>
                 </div>
 
-                <div class="price-footer">
+                <div class="options-bottom">
+                    <div id="precio-producto" class="price-display">--</div>
+                    <a href="#" id="whatsapp-link" class="btn-whatsapp" target="_blank">Consultar Disponibilidad</a>
+                    
                     <div class="legal-info">
                         <p class="import-note">Importador legal ante la DIAN</p>
+                        <p class="tax-note">IVA incluido</p>
                     </div>
-                    <div id="precio-producto" class="price-display">--</div>
-                    <p class="tax-note">Precio con IVA incluido, preguntar para más información.</p>
                 </div>
             </aside>
         </div>
@@ -70,87 +84,37 @@
                 <div class="story-card">
                     <div class="story-icon">🧵</div>
                     <h3>Materiales Premium</h3>
-                    <p>Paño de alta densidad seleccionado por su durabilidad y firmeza estructural ante el uso diario.</p>
+                    <p>Paño de alta densidad seleccionado por su durabilidad.</p>
                 </div>
                 <div class="story-card">
                     <div class="story-icon">🏗️</div>
-                    <h3>Construcción</h3>
-                    <p>6 paneles reforzados internamente con entretela rígida, manteniendo la corona siempre firme.</p>
+                    <h3>Estructura Real</h3>
+                    <p>6 paneles reforzados para mantener la corona firme siempre.</p>
                 </div>
                 <div class="story-card">
                     <div class="story-icon">📏</div>
-                    <h3>Ajuste Real</h3>
-                    <p>Ergonomía calculada para adaptarse a la fisonomía real con comodidad absoluta.</p>
+                    <h3>Ajuste Ergonómico</h3>
+                    <p>Calculado para adaptarse a la fisonomía real.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="brand-story-section">
-        <div class="section-container">
-            <h2 class="section-title">Ingeniería Interactiva</h2>
-            <div class="infografia-master">
-                <div class="canvas-interactivo">
-                    <img src="Assets/GorraRender.png" alt="Gorra Master" class="render-infografia">
-
-                    <div class="hotspot" style="top: 25%; left: 15%;">
-                        <div class="pulso-interactivo"></div>
-                        <div class="ventana-flotante v-izquierda">Secado Rápido</div>
-                    </div>
-                    <div class="hotspot" style="top: 15%; left: 50%;">
-                        <div class="pulso-interactivo"></div>
-                        <div class="ventana-flotante v-centro">Diseños Reflectivos</div>
-                    </div>
-                    <div class="hotspot" style="top: 20%; right: 15%;">
-                        <div class="pulso-interactivo"></div>
-                        <div class="ventana-flotante v-derecha">SPF 50 Protección Solar</div>
-                    </div>
-                    <div class="hotspot" style="bottom: 30%; left: 10%;">
-                        <div class="pulso-interactivo"></div>
-                        <div class="ventana-flotante v-izquierda">Ultra Ligera (51g)</div>
-                    </div>
-                    <div class="hotspot" style="bottom: 25%; right: 15%;">
-                        <div class="pulso-interactivo"></div>
-                        <div class="ventana-flotante v-derecha">Antiarrugas</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section class="comparison-section">
         <div class="section-container">
             <h2 class="section-title">Guía de Estructura</h2>
             <div class="comparison-grid">
-                
                 <div class="comp-card">
-                    <div class="comp-header">
-                        <span class="badge">Moderno / Urbano</span>
-                        <h3>5 Paneles</h3>
-                    </div>
-                    <ul class="comp-list">
-                        <li><strong>Paneles:</strong> 5 secciones de tela.</li>
-                        <li><strong>Frente:</strong> Sin costura central (Frente liso).</li>
-                        <li><strong>Uso Ideal:</strong> Estampados o bordados de gran tamaño.</li>
-                        <li><strong>Estilo:</strong> Más moderna, deportiva y minimalista.</li>
-                    </ul>
+                    <span class="badge">Urbano</span>
+                    <h3>5 Paneles</h3>
+                    <p>Frente liso sin costura, ideal para diseños grandes.</p>
                 </div>
-
                 <div class="vs-divider">VS</div>
-
                 <div class="comp-card highlight">
-                    <div class="comp-header">
-                        <span class="badge">Clásico / Pro</span>
-                        <h3>6 Paneles</h3>
-                    </div>
-                    <ul class="comp-list">
-                        <li><strong>Paneles:</strong> 6 secciones de tela.</li>
-                        <li><strong>Frente:</strong> Con costura al centro del frente.</li>
-                        <li><strong>Uso Ideal:</strong> Estilo beisbolero tradicional.</li>
-                        <li><strong>Estilo:</strong> Forma más redonda, clásica y profesional.</li>
-                    </ul>
+                    <span class="badge">Clásico</span>
+                    <h3>6 Paneles</h3>
+                    <p>Estructura tradicional beisbolera con ajuste pro.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -158,16 +122,10 @@
     <div id="modalContacto" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <div class="modal-header-brand">
-                <img src="Logo.png" alt="Logo" style="width:50px;">
-                <h2 style="color:var(--camel); letter-spacing:1px; margin-top:10px;">MazterCaps</h2>
-            </div>
-            <div class="modal-body">
-                <p>Calidad premium garantizada.</p>
-                <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
-                <p><strong>📍 Bogotá, Colombia</strong></p>
-                <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank">Escribir al WhatsApp</a>
-            </div>
+            <img src="Logo.png" alt="Logo" width="60">
+            <h2 style="color:var(--camel)">MazterCaps</h2>
+            <p>📍 Bogotá, Colombia</p>
+            <a href="https://wa.me/573000000000" class="btn-whatsapp">Chat Directo</a>
         </div>
     </div>
 
