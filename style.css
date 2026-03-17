@@ -1,5 +1,5 @@
 /* =========================================
-   1. VARIABLES Y BASE PREMIUM
+   1. VARIABLES INICIALES
    ========================================= */
 :root {
     --camel: #C19A6B;
@@ -8,7 +8,6 @@
     --light-gray: #f4f4f4;
     --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -17,9 +16,8 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
-
 /* =========================================
-   2. HEADER Y BOTONES MINIMALISTAS
+   2. HEADER Y BOTONES
    ========================================= */
 .main-header {
     background-color: var(--camel);
@@ -29,7 +27,6 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -38,18 +35,15 @@ body {
     align-items: center;
     padding: 0 20px;
 }
-
 .brand-group {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-
 .logo-img {
     width: 42px;
     height: auto;
 }
-
 .brand-name {
     color: white;
     font-weight: bold;
@@ -57,7 +51,6 @@ body {
     letter-spacing: 1px;
     text-transform: none;
 }
-
 .btn-header-minimal {
     background-color: transparent;
     color: white;
@@ -72,7 +65,6 @@ body {
     transition: var(--transition);
     font-family: inherit;
 }
-
 .btn-header-minimal:hover {
     background-color: white;
     color: var(--camel);
@@ -80,7 +72,6 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transform: translateY(-1px);
 }
-
 /* =========================================
    3. GALERÍA (CORRECCIÓN DE ENCUADRE)
    ========================================= */
@@ -89,13 +80,11 @@ body {
     margin: 40px auto;
     padding: 0 20px;
 }
-
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 40px;
 }
-
 .main-photo-card {
     background: var(--light-gray);
     border-radius: 12px;
@@ -107,7 +96,6 @@ body {
     overflow: hidden;
     border: 1px solid #eee;
 }
-
 #foto-principal {
     max-width: 100%;
     max-height: 100%;
@@ -116,11 +104,9 @@ body {
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
-
 .fade-out {
     opacity: 0;
 }
-
 .thumbs-grid {
     display: flex;
     gap: 12px;
@@ -128,7 +114,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .miniatura {
     width: 75px;
     height: 75px;
@@ -139,19 +124,16 @@ body {
     background: white;
     transition: all 0.2s ease;
 }
-
 .miniatura:hover {
     border-color: var(--camel);
     transform: scale(1.05);
 }
-
 .info-adicional {
     display: flex;
     gap: 15px;
     margin-top: 30px;
     justify-content: center;
 }
-
 .cajon-info {
     flex: 1;
     background: white;
@@ -161,7 +143,6 @@ body {
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 }
-
 .cajon-info small {
     display: block;
     color: var(--camel);
@@ -170,14 +151,12 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
 .cajon-info span {
     font-weight: 600;
     font-size: 1.1rem;
 }
-
 /* =========================================
-   4. SIDEBAR Y OPCIONES
+   4. SIDEBAR Y OPCIONS
    ========================================= */
 .options-sidebar {
     background: var(--light-gray);
@@ -187,14 +166,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .color-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin: 20px 0;
 }
-
 .burbuja-color {
     width: 32px;
     height: 32px;
@@ -204,12 +181,10 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s;
 }
-
 .burbuja-color.active {
     border-color: var(--camel);
     transform: scale(1.15);
 }
-
 .price-display {
     font-size: 2.2rem;
     font-weight: 800;
@@ -217,36 +192,31 @@ body {
     margin: 10px 0;
     color: var(--text);
 }
-
 .legal-info {
     border-top: 1px solid #ccc;
     padding-top: 20px;
     margin-top: 20px;
     text-align: center;
 }
-
 .import-note {
     font-size: 0.7rem;
     color: #888;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .tax-note {
     font-size: 0.75rem;
     text-align: center;
     color: #666;
     margin-top: 5px;
 }
-
 /* =========================================
-   5. SECCIONES INFORMATIVAS (INGENIERÍA)
+   5. SECCIONES INFORMATIVAS
    ========================================= */
 .brand-story-section {
     padding: 80px 20px;
     background: #f9f9f9;
 }
-
 .section-title {
     text-align: center;
     color: var(--camel);
@@ -255,7 +225,6 @@ body {
     margin-bottom: 50px;
     font-size: 1.6rem;
 }
-
 .story-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -263,7 +232,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .story-card {
     background: white;
     padding: 40px;
@@ -272,24 +240,20 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
     transition: transform 0.3s;
 }
-
 .story-card:hover {
     transform: translateY(-5px);
 }
-
 .story-icon {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
-
 /* =========================================
-   6. INFOGRAFÍA COMPARATIVA (5 VS 6 GAJOS)
+   6. INFOGRAFÍA COMPARATIVA
    ========================================= */
 .comparison-section {
     padding: 80px 20px;
     background: white;
 }
-
 .comparison-grid {
     display: flex;
     align-items: center;
@@ -298,28 +262,25 @@ body {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 .comp-card {
     flex: 1;
-    background: #ebebeb; /* Un gris un poco más profundo */
+    background: #ebebeb;
     padding: 45px;
     border-radius: 4px;
     border: 1px solid #ddd;
-    opacity: 0.5; /* Aquí está el oscurecimiento */
-    filter: grayscale(80%); /* La hace ver más inactiva */
-    transition: all 0.5s ease; /* Para que el cambio al elegir otra gorra sea suave */
+    opacity: 0.5;
+    filter: grayscale(80%);
+    transition: all 0.5s ease;
 }
-
 .comp-card.highlight {
-    opacity: 1; /* Brillo total */
-    filter: grayscale(0%); /* Color total */
+    opacity: 1;
+    filter: grayscale(0%);
     background: var(--white);
     border: 1px solid var(--camel);
     box-shadow: 0 10px 40px rgba(193, 154, 107, 0.15);
-    transform: scale(1.02); /* Un ligero aumento de tamaño para resaltar */
+    transform: scale(1.02);
     z-index: 2;
 }
-
 .badge {
     background: var(--camel);
     color: white;
@@ -331,20 +292,17 @@ body {
     display: inline-block;
     margin-bottom: 15px;
 }
-
 .comp-list {
     list-style: none;
     padding: 0;
     margin-top: 20px;
 }
-
 .comp-list li {
     padding: 12px 0;
     border-bottom: 1px solid #eee;
     font-size: 0.85rem;
     color: #555;
 }
-
 .comp-list li strong {
     display: block;
     color: var(--camel);
@@ -352,21 +310,18 @@ body {
     text-transform: uppercase;
     margin-bottom: 3px;
 }
-
 .vs-divider {
     font-weight: 900;
     color: #ddd;
     font-style: italic;
     font-size: 1.4rem;
 }
-
 /* =========================================
-   7. MENÚS Y MODALES
+   7. MENÚ Y MODAL
    ========================================= */
 .dropdown { 
     position: relative; 
 }
-
 .dropdown-menu {
     list-style: none;
     padding: 0;
@@ -384,11 +339,9 @@ body {
     display: none;
     z-index: 1100;
 }
-
 .dropdown-menu.active {
     display: block;
 }
-
 .dropdown-menu li {
     padding: 12px 20px;
     cursor: pointer;
@@ -398,12 +351,10 @@ body {
     text-align: left;
     transition: background 0.2s;
 }
-
 .dropdown-menu li:hover {
     background: var(--light-gray);
     color: var(--camel);
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -415,7 +366,6 @@ body {
     z-index: 2000;
     backdrop-filter: blur(4px);
 }
-
 .modal-content {
     background: white;
     width: 90%;
@@ -427,7 +377,6 @@ body {
     position: relative;
     text-align: center;
 }
-
 .close-modal {
     position: absolute;
     right: 20px;
@@ -436,7 +385,6 @@ body {
     cursor: pointer;
     color: #aaa;
 }
-
 .btn-whatsapp {
     background: #25D366;
     color: white;
@@ -450,7 +398,6 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
-
 .stock-status {
     font-size: 0.7rem;
     font-weight: bold;
@@ -460,12 +407,10 @@ body {
     display: inline-block;
     margin-bottom: 10px;
 }
-
 .status-disponible {
     background-color: #e8f5e9;
     color: #2e7d32;
 }
-
 .status-agotado {
     background-color: #ffebee;
     color: #c62828;
@@ -474,7 +419,7 @@ body {
     padding: 120px 20px;
     display: flex;
     justify-content: center;
-    overflow: visible; /* Importante para que los tags no se corten al salir del div */
+    overflow: visible;
 }
 .render-wrapper {
     position: relative;
@@ -492,8 +437,8 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
-    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12)) blur(0.5px);
+    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.12));
+    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.12)) blur(0.5px);
     transition: filter 0.3s ease, transform 0.3s ease;
     position: relative;
     z-index: 10;
@@ -526,26 +471,35 @@ body {
     z-index: -1;
     top: 50%;
 }
-.t-top-left { top: 0%; left: -100px; }
-.t-top-left::after {
-    right: -140px; /* Longitud del puente */
-    width: 140px; 
-    transform: rotate(28deg); /* Ángulo hacia abajo/centro */
-    transform-origin: left; /* La rotación nace desde el tag */
+.t-top-left {
+    top: 0%; 
+    left: -100px; 
 }
-.t-bottom-left { bottom: 15%; left: -120px; }
+.t-top-left::after {
+    right: -140px;
+    width: 140px; 
+    transform: rotate(28deg);
+    transform-origin: left;
+}
+.t-bottom-left {
+    bottom: 15%; 
+    left: -120px; 
+}
 .t-bottom-left::after {
     right: -160px;
     width: 160px;
-    transform: rotate(-18deg); /* Ángulo hacia arriba/centro */
+    transform: rotate(-18deg);
     transform-origin: left;
 }
-.t-top-right { top: 0%; right: -100px; }
+.t-top-right { 
+    top: 0%; 
+    right: -100px; 
+}
 .t-top-right::after {
     left: -140px;
     width: 140px;
-    transform: rotate(-28deg); /* Ángulo hacia abajo/centro */
-    transform-origin: right; /* La rotación nace desde el tag */
+    transform: rotate(-28deg);
+    transform-origin: right;
 }
 .t-mid-right { 
     top: 50%; 
@@ -555,18 +509,21 @@ body {
 .t-mid-right::after {
     left: -160px;
     width: 160px;
-    transform: rotate(0deg); /* Línea recta al centro */
+    transform: rotate(0deg);
     transform-origin: right;
 }
-.t-bottom-right { bottom: 0%; right: -80px; }
+.t-bottom-right { 
+    bottom: 0%; 
+    right: -80px; 
+}
 .t-bottom-right::after {
     left: -150px;
     width: 150px;
-    transform: rotate(22deg); /* Ángulo hacia arriba/centro */
+    transform: rotate(22deg);
     transform-origin: right;
 }
 /* =========================================
-   8. RESPONSIVE
+   8. RESPONSIVENES
    ========================================= */
 @media (max-width: 600px) {
     .header-container {
@@ -585,7 +542,9 @@ body {
     .logo-img {
         width: 35px;
     }
-    .product-grid, .story-grid, .comparison-grid {
+    .product-grid, 
+    .story-grid, 
+    .comparison-grid {
         display: block;
     }
     .render-wrapper {
