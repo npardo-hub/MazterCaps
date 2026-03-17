@@ -301,16 +301,23 @@ body {
 
 .comp-card {
     flex: 1;
-    background: var(--light-gray);
+    background: #ebebeb; /* Un gris un poco más profundo */
     padding: 45px;
     border-radius: 4px;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
+    opacity: 0.5; /* Aquí está el oscurecimiento */
+    filter: grayscale(80%); /* La hace ver más inactiva */
+    transition: all 0.5s ease; /* Para que el cambio al elegir otra gorra sea suave */
 }
 
 .comp-card.highlight {
+    opacity: 1; /* Brillo total */
+    filter: grayscale(0%); /* Color total */
+    background: var(--white);
     border: 1px solid var(--camel);
-    background: white;
-    box-shadow: 0 10px 40px rgba(193, 154, 107, 0.1);
+    box-shadow: 0 10px 40px rgba(193, 154, 107, 0.15);
+    transform: scale(1.02); /* Un ligero aumento de tamaño para resaltar */
+    z-index: 2;
 }
 
 .badge {
