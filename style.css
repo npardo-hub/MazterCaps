@@ -471,52 +471,65 @@ body {
     color: #c62828;
 }
 .product-render-section {
-    padding: 100px 20px; /* Más espacio para las etiquetas */
+    padding: 80px 20px;
     background-color: var(--white);
+}
+
+.render-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.render-col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacio vertical entre etiquetas */
+    flex: 1;
+}
+
+.render-col.left { text-align: right; }
+.render-col.right { text-align: left; }
+
+.render-img-center {
+    flex: 2;
     display: flex;
     justify-content: center;
 }
 
-.render-container {
-    position: relative; /* Necesario para posicionar los textos */
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-}
-
 .render-img {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
 }
 
-/* Estilo Base de las Etiquetas */
+/* Estilo de las etiquetas mejorado */
 .feat-tag {
-    position: absolute;
+    display: inline-block;
     background: white;
-    padding: 8px 15px;
+    padding: 10px 18px;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--text);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border-left: 3px solid var(--camel);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--camel);
     white-space: nowrap;
-    z-index: 10;
 }
-.t1 { top: 10%; left: -10%; } 
-.t2 { top: 35%; right: -15%; } 
-.t3 { bottom: 20%; left: -15%; } 
-.t4 { bottom: 5%; right: 0%; }  
-.t5 { top: -5%; right: 10%; } 
-
 /* =========================================
    8. RESPONSIVE
    ========================================= */
 @media (max-width: 900px) {
+    .render-main-container {
+        flex-direction: column; /* Apila todo verticalmente */
+        gap: 30px;
+    }
     .product-grid {
         grid-template-columns: 1fr;
     }
@@ -524,11 +537,10 @@ body {
         padding: 40px 10px;
     }
    .feat-tag {
-        position: static; /* En móvil las ponemos en lista */
-        display: inline-block;
-        margin: 5px;
         font-size: 0.65rem;
-        border-left: 2px solid var(--camel);
+        padding: 8px 12px;
+        white-space: normal; /* Permite que el texto baje si es muy largo */
+        max-width: 140px;
     }
    .render-container {
         display: flex;
@@ -548,10 +560,16 @@ body {
     .main-photo-card {
         height: 350px;
     }
-   .render-img {
-        order: -1;
-        max-width: 280px;
-        margin-bottom: 20px;
+   .render-img-center {
+        order: 1; /* Imagen arriba */
+    }
+   .render-col {
+        order: 2; /* Etiquetas abajo */
+        text-align: center !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
    .header-container {
         padding: 0 15px;
