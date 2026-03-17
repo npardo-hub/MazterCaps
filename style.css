@@ -488,13 +488,17 @@ body {
 }
 .render-img {
     width: 100%;
-    max-width: 400px; /* O el tamaño que prefieras en PC */
+    max-width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12)) blur(0.5px);
     transition: filter 0.3s ease, transform 0.3s ease;
+}
+.render-img:hover {
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.18)) blur(0px);
+    transform: translateY(-5px);
 }
 .feat-tag {
     position: absolute;
