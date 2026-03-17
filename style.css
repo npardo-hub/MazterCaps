@@ -179,84 +179,6 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
 }
-.page-wrapper {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 40px;
-}
-
-.main-photo-card {
-    background: var(--light-gray);
-    border-radius: 12px;
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    position: relative; /* Importante para los hotspots */
-    border: 1px solid #eee;
-}
-
-#foto-principal {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-/* ENCUADRE DE TEXTOS SOBRE EL RENDER */
-.canvas-interactivo {
-    position: relative;
-    display: inline-block;
-}
-
-.render-infografia {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.hotspot {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-}
-
-.ventana-flotante {
-    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-}
-
-/* Miniaturas */
-.thumbs-grid {
-    display: flex;
-    gap: 12px;
-    margin: 20px 0;
-    justify-content: center;
-}
-
-.miniatura {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    background: white;
-}
-
-.miniatura:hover { border-color: var(--camel); }
 
 /* =========================================
    4. SIDEBAR Y OPCIONES
@@ -514,6 +436,47 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
+.canvas-interactivo {
+    position: relative;
+    display: inline-block; /* Se ajusta al ancho real de la imagen */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 2. La imagen base */
+.render-infografia {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Evita que la imagen interfiera con los clics */
+}
+
+/* 3. Estilo único para las etiquetas del render */
+/* Usamos nombres de clase muy específicos para evitar conflictos */
+.etiqueta-render {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    /* Estética original */
+    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+    border: none;
+    cursor: default;
+}
+
+/* 4. Ajuste para que en móviles no se desborden */
+@media (max-width: 600px) {
+    .etiqueta-render {
+        font-size: 0.6rem;
+        padding: 4px 10px;
+    }
+}
 
 /* =========================================
    8. RESPONSIVE
@@ -537,4 +500,3 @@ body {
         height: 350px;
     }
 }
-haz que los hotspot se encuadren sobre la imagen render unicamente y ya, sin tocar el resto del codigo, buscando que solo se ajusten la infografica de la imagen 
