@@ -425,11 +425,16 @@ body {
     display: block;
     width: 100%;
 }
+.render-container-central {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .render-wrapper {
     position: relative;
     width: 100%;
     max-width: 500px;
-    margin: 80px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,24 +442,15 @@ body {
 }
 .render-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
-    display: block;
-    margin: 0 auto;
-    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.12));
-    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.12)) blur(0.5px);
-    transition: filter 0.3s ease, transform 0.3s ease;
-    position: relative;
     z-index: 10;
+    position: relative;
+    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.15));
 }
 .render-img:hover {
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.18)) blur(0px);
     transform: translateY(-5px);
-}
-.render-container-central {
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 .feat-tag {
     position: absolute;
