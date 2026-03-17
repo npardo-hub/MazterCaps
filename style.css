@@ -435,9 +435,6 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
-.main-photo-card {
-    position: relative; 
-}
 .punto-info-render {
     position: absolute;
     z-index: 10;
