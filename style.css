@@ -438,28 +438,26 @@ body {
 .main-photo-card {
     position: relative; 
 }
-
 .punto-info-render {
     position: absolute;
-    z-index: 5; /* Por debajo del header (1000) pero sobre la imagen */
+    z-index: 10;
     transform: translate(-50%, -50%);
-    background: var(--camel); /* Usamos tu variable camel */
+    background: var(--camel); /* Color café de tu marca */
     color: white;
-    padding: 5px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    pointer-events: none; /* No estorba al hacer clic en la imagen */
-    animation: pulseHotspot 2s infinite;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    pointer-events: none; /* Para que no interfiera con clics en la gorra */
+    animation: flotarHotspot 3s ease-in-out infinite;
 }
 
-@keyframes pulseHotspot {
-    0% { transform: translate(-50%, -50%) scale(1); }
-    50% { transform: translate(-50%, -50%) scale(1.05); }
-    100% { transform: translate(-50%, -50%) scale(1); }
+@keyframes flotarHotspot {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+    50% { transform: translate(-50%, -50%) translateY(-5px); }
 }
 
 /* =========================================
@@ -485,6 +483,6 @@ body {
     }
     .punto-info-render {
         font-size: 0.55rem;
-        padding: 4px 8px;
+        padding: 4px 10px;
     }
 }
