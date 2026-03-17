@@ -1,3 +1,6 @@
+/* =========================================
+   1. VARIABLES Y BASE PREMIUM
+   ========================================= */
 :root {
     --camel: #C19A6B;
     --white: #ffffff;
@@ -6,7 +9,11 @@
     --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     --success: #27ae60;
     --danger: #e74c3c;
+    /* Glassmorphism Color */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.4);
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -15,6 +22,10 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN
+   ========================================= */
 .main-header {
     background-color: var(--camel);
     padding: 15px 0;
@@ -23,6 +34,7 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,21 +43,22 @@ body {
     align-items: center;
     padding: 0 20px;
 }
+
 .brand-group {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.logo-img {
-    width: 42px;
-    height: auto;
-}
+
+.logo-img { width: 42px; height: auto; }
+
 .brand-name {
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
     letter-spacing: 1px;
 }
+
 .btn-header-minimal {
     background-color: transparent;
     color: white;
@@ -59,21 +72,27 @@ body {
     cursor: pointer;
     transition: var(--transition);
 }
+
 .btn-header-minimal:hover {
     background-color: white;
     color: var(--camel);
-    transform: translateY(-1px);
 }
+
+/* =========================================
+   3. ÁREA DE PRODUCTO Y DISPONIBILIDAD
+   ========================================= */
 .page-wrapper {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
+
 .product-grid {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 40px;
 }
+
 .main-photo-card {
     background: var(--light-gray);
     border-radius: 12px;
@@ -84,62 +103,11 @@ body {
     padding: 20px;
     position: relative;
     border: 1px solid #eee;
-    overflow: hidden;
 }
-#foto-principal {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    transition: opacity 0.3s ease;
-}
-.thumbs-grid {
-    display: flex;
-    gap: 12px;
-    margin: 20px 0;
-    justify-content: center;
-}
-.miniatura {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    background: white;
-    transition: var(--transition);
-}
-.miniatura:hover, .miniatura.active {
-    border-color: var(--camel);
-    transform: scale(1.05);
-}
-.info-adicional {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-}
-.cajon-info {
-    flex: 1;
-    background: white;
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
-    border-radius: 4px;
-}
-.cajon-info small {
-    display: block;
-    color: var(--camel);
-    font-size: 0.65rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-.cajon-info span { font-weight: 600; font-size: 1.1rem; }
-.options-sidebar {
-    background: var(--light-gray);
-    padding: 30px;
-    border-radius: 12px;
-    height: fit-content;
-}
+
+#foto-principal { max-width: 90%; max-height: 90%; object-fit: contain; }
+
+/* Estado de Stock Premium */
 .stock-status {
     font-size: 0.65rem;
     font-weight: 700;
@@ -152,6 +120,7 @@ body {
     gap: 8px;
     margin-bottom: 15px;
 }
+
 .stock-status::before {
     content: "";
     width: 8px;
@@ -164,46 +133,33 @@ body {
     color: var(--success);
     border: 1px solid rgba(39, 174, 96, 0.2);
 }
+
 .status-disponible::before {
     background-color: var(--success);
     box-shadow: 0 0 8px rgba(39, 174, 96, 0.6);
     animation: blink-status 2s infinite;
 }
+
 .status-agotado {
     background-color: rgba(231, 76, 60, 0.1);
     color: var(--danger);
     border: 1px solid rgba(231, 76, 60, 0.2);
 }
+
 .status-agotado::before { background-color: var(--danger); }
+
 @keyframes blink-status {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }
 }
-.color-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin: 15px 0;
-}
-.burbuja-color {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: 0.2s;
-}
-.burbuja-color.active {
-    border-color: var(--camel);
-    transform: scale(1.2);
-}
+
 .price-display {
     font-size: 2.5rem;
     font-weight: 800;
     margin: 20px 0;
     text-align: center;
 }
+
 .btn-whatsapp {
     background: #25D366;
     color: white;
@@ -216,107 +172,126 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
 }
-.btn-whatsapp.disabled {
-    background-color: #ccc !important;
-    pointer-events: none;
-    filter: grayscale(1);
-}
+
+/* =========================================
+   4. INGENIERÍA INTERACTIVA (GLASS HOTSPOTS)
+   ========================================= */
 .infografia-master {
-    padding: 40px 0;
+    padding: 60px 0;
     display: flex;
     justify-content: center;
 }
+
 .canvas-interactivo {
     position: relative;
     display: inline-block;
-    max-width: 100%;
 }
+
 .render-infografia {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
 .hotspot {
     position: absolute;
     z-index: 10;
     transform: translate(-50%, -50%);
 }
+
+.pulso-interactivo {
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 2px solid var(--camel);
+    border-radius: 50%;
+    cursor: help;
+}
+
+.pulso-interactivo::after {
+    content: "";
+    width: 100%; height: 100%;
+    background: var(--camel);
+    border-radius: 50%;
+    position: absolute;
+    animation: pulse-hotspot 2s infinite;
+}
+
+@keyframes pulse-hotspot {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+/* ETIQUETAS GLASSMORPHISM */
+.ventana-flotante {
+    position: absolute;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px); /* El efecto de cristal */
+    -webkit-backdrop-filter: blur(10px);
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilos de dirección para evitar solapamiento */
 .ventana-flotante.v-derecha {
     left: 20px;
+    top: 50%;
     transform: translateY(-50%);
 }
+
 .ventana-flotante.v-izquierda {
     right: 20px;
+    top: 50%;
     transform: translateY(-50%);
 }
+
 .ventana-flotante.v-centro {
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
 }
-.ventana-flotante {
-    position: absolute;
-    pointer-events: none;
-}
-}
-.pulso-interactivo {
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-}
-.pulso-interactivo::after {
-    content: "";
-    width: 100%; height: 100%;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    animation: pulse-hotspot 2s infinite;
-}
-@keyframes pulse-hotspot {
-    0% { transform: scale(1); opacity: 0.8; }
-    100% { transform: scale(3); opacity: 0; }
-}
+
+/* =========================================
+   5. SECCIONES DE HISTORIA Y COMPARACIÓN
+   ========================================= */
 .brand-story-section { padding: 80px 20px; background: #f9f9f9; }
 .section-title { text-align: center; color: var(--camel); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 50px; }
+
 .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto; }
 .story-card { background: white; padding: 40px; text-align: center; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); }
-.comparison-section { padding: 80px 20px; background: white; }
+
 .comparison-grid { display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 1100px; margin: 0 auto; }
 .comp-card { flex: 1; background: var(--light-gray); padding: 40px; border-radius: 8px; }
 .comp-card.highlight { border: 1px solid var(--camel); background: white; }
-.dropdown-menu {
-    position: absolute;
-    background: white;
-    list-style: none;
-    padding: 0; margin: 0;
-    width: 220px;
-    top: calc(100% + 15px);
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    display: none;
-    z-index: 1100;
-}
-.dropdown-menu.active { display: block; }
-.dropdown-menu li { padding: 15px 20px; border-bottom: 1px solid #f4f4f4; cursor: pointer; }
-.dropdown-menu li:hover { background: var(--light-gray); color: var(--camel); }
+
+.vs-divider { font-weight: 900; color: var(--camel); font-size: 1.5rem; }
+
+/* =========================================
+   6. MODAL Y DROPDOWN
+   ========================================= */
 .modal {
     display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     z-index: 2000;
     backdrop-filter: blur(5px);
 }
-.modal-content { background: white; width: 90%; max-width: 450px; margin: 8% auto; padding: 40px; border-radius: 12px; text-align: center; position: relative; }
+.modal-content { background: white; width: 90%; max-width: 400px; margin: 10% auto; padding: 40px; border-radius: 12px; text-align: center; }
 
+/* =========================================
+   7. RESPONSIVE
+   ========================================= */
 @media (max-width: 900px) {
-    .product-grid, .story-grid, .comparison-grid { grid-template-columns: 1fr; }
+    .product-grid, .story-grid { grid-template-columns: 1fr; }
     .comparison-grid { flex-direction: column; }
-    .vs-divider { margin: 20px 0; text-align: center; font-weight: bold; }
+    .options-sidebar { margin-top: 20px; }
 }
