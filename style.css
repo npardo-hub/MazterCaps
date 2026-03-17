@@ -515,16 +515,6 @@ body {
     z-index: 5;
     pointer-events: none;
 }
-.feat-tag::before {
-    content: "";
-    position: absolute;
-    background: var(--camel);
-    height: 1px;
-    width: 30px;
-    top: 50%;
-    z-index: -1;
-    opacity: 0.5;
-}
 .feat-tag::after {
     content: "";
     position: absolute;
