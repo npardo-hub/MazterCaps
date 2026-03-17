@@ -1,176 +1,460 @@
 /* =========================================
-   1. VARIABLES Y BASE PREMIUM
-   ========================================= */
+   1. VARIABLES Y BASE PREMIUM
+   ========================================= */
 :root {
-    --camel: #C19A6B;
-    --white: #ffffff;
-    --text: #222;
-    --light-gray: #f4f4f4;
-    --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --camel: #C19A6B;
+    --white: #ffffff;
+    --text: #222;
+    --light-gray: #f4f4f4;
+    --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background-color: var(--white);
-    color: var(--text);
-    overflow-x: hidden;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--white);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
 /* =========================================
-   2. HEADER Y BOTONES MINIMALISTAS
-   ========================================= */
+   2. HEADER Y BOTONES MINIMALISTAS
+   ========================================= */
 .main-header {
-    background-color: var(--camel);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: var(--camel);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .brand-group {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo-img {
-    width: 42px;
-    height: auto;
+    width: 42px;
+    height: auto;
 }
 
 .brand-name {
-    color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: none;
 }
 
+/* Estilo de Botones (Modelos y Contacto) */
 .btn-header-minimal {
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 10px 26px;
-    border-radius: 2px;
-    font-size: 0.7rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: var(--transition);
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 26px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaciado premium */
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
 }
 
 .btn-header-minimal:hover {
-    background-color: white;
-    color: var(--camel);
-    border-color: white;
+    background-color: white;
+    color: var(--camel);
+    border-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
 }
 
 /* =========================================
-   3. GALERÍA Y HOTSPOTS (ESTRUCTURA CLAVE)
-   ========================================= */
+   3. GALERÍA (CORRECCIÓN DE ENCUADRE)
+   ========================================= */
 .page-wrapper {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 40px;
 }
 
-/* Contenedor relativo para que los puntos no "vuelen" */
 .main-photo-card {
-    background: var(--light-gray);
-    border-radius: 12px;
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    position: relative; /* CRÍTICO: Para posicionar hotspots */
+    background: var(--light-gray);
+    border-radius: 12px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #eee;
 }
 
 #foto-principal {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Mantiene la proporción sin deformar */
+    transition: opacity 0.3s ease;
 }
 
-/* Estilo de las etiquetas (Hotspots) */
-.punto-info-render {
-    position: absolute;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+.fade-out {
+    opacity: 0;
+}
+
+/* Miniaturas uniformes */
+.thumbs-grid {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.miniatura {
+    width: 75px;
+    height: 75px;
+    object-fit: cover; /* Asegura que todas sean del mismo tamaño */
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+.miniatura:hover {
+    border-color: var(--camel);
+    transform: scale(1.05);
+}
+
+/* Medidas debajo de la foto */
+.info-adicional {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cajon-info {
+    flex: 1;
+    background: white;
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.cajon-info small {
+    display: block;
+    color: var(--camel);
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.cajon-info span {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /* =========================================
-   4. SIDEBAR Y OPCIONES
-   ========================================= */
+   4. SIDEBAR Y OPCIONES
+   ========================================= */
 .options-sidebar {
-    background: var(--light-gray);
-    padding: 30px;
-    border-radius: 12px;
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.burbuja-color {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.burbuja-color.active {
+    border-color: var(--camel);
+    transform: scale(1.15);
 }
 
 .price-display {
-    font-size: 2.2rem;
-    font-weight: 800;
-    text-align: center;
-    color: var(--text);
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px 0;
+    color: var(--text);
 }
 
-.btn-whatsapp {
-    background: #25D366;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+.legal-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.import-note {
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tax-note {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
 }
 
 /* =========================================
-   5. RESPONSIVE (CORREGIDO)
-   ========================================= */
-@media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    .main-photo-card {
-        height: 350px;
-    }
+   5. SECCIONES INFORMATIVAS (INGENIERÍA)
+   ========================================= */
+.brand-story-section {
+    padding: 80px 20px;
+    background: #f9f9f9;
 }
 
-@media (max-width: 600px) {
-    .punto-info-render {
-        font-size: 0.6rem;
-        padding: 4px 10px;
-    }
+.section-title {
+    text-align: center;
+    color: var(--camel);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-card {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   6. INFOGRAFÍA COMPARATIVA (5 VS 6 GAJOS)
+   ========================================= */
+.comparison-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.comparison-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.comp-card {
+    flex: 1;
+    background: var(--light-gray);
+    padding: 45px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.comp-card.highlight {
+    border: 1px solid var(--camel);
+    background: white;
+    box-shadow: 0 10px 40px rgba(193, 154, 107, 0.1);
+}
+
+.badge {
+    background: var(--camel);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.comp-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.comp-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.comp-list li strong {
+    display: block;
+    color: var(--camel);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.vs-divider {
+    font-weight: 900;
+    color: #ddd;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+/* =========================================
+   7. MENÚS Y MODALES
+   ========================================= */
+.dropdown { position: relative; }
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #eee;
+    width: 200px;
+    display: none;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1100;
+}
+
+.dropdown-menu.active { display: block; }
+
+.dropdown-menu li {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li:hover {
+    background: var(--light-gray);
+    color: var(--camel);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 2000;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 8px;
+    border-top: 6px solid var(--camel);
+    position: relative;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   8. RESPONSIVE
+   ========================================= */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .story-grid, .comparison-grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+    .vs-divider {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .main-photo-card {
+        height: 350px;
+    }
 }
