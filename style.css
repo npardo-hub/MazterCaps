@@ -536,31 +536,18 @@ body {
 /* =========================================
    8. RESPONSIVE
    ========================================= */
+Para que tu @media quede de manera "oficial" y organizada, debemos asegurar que las reglas se apliquen de forma jerárquica y sin conflictos. He unificado los ajustes del header (ocultar el nombre), el render de la gorra y las secciones informativas en un solo bloque coherente.
+
+Aquí tienes la versión final y optimizada para tu archivo CSS:
+
+CSS
+/* =========================================
+   8. RESPONSIVE (VERSIÓN FINAL OFICIAL)
+   ========================================= */
 @media (max-width: 900px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-    .product-render-section {
-        padding: 60px 20px;
-    }
-   .render-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-   .feat-tag {
-        position: static !important; /* Quita el modo "órbita" en móvil */
-        transform: none !important;
-        text-align: center;
-        width: fit-content;
-        margin: 5px auto;
-    }
-   .render-img {
-        order: -1;
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-    .story-grid, .comparison-grid {
+    .product-grid, 
+    .story-grid, 
+    .comparison-grid {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
@@ -568,24 +555,49 @@ body {
         margin: 20px 0;
         text-align: center;
     }
-
     .main-photo-card {
         height: 350px;
     }
-   .header-container {
+    .brand-name {
+        display: none;
+    }
+    .header-container {
         padding: 0 15px;
         display: grid;
-        grid-template-columns: auto 1fr auto; /* Logo | Espacio Central | Contacto */
+        grid-template-columns: auto 1fr auto;
         align-items: center;
         gap: 10px;
     }
-   .btn-header-minimal {
-        padding: 8px 12px; /* Reducimos el padding lateral */
-        font-size: 0.65rem; /* Fuente ligeramente más pequeña */
-        letter-spacing: 1px; /* Menos espacio entre letras para que quepan */
-        white-space: nowrap; /* Evita que el texto salte de línea */
+    .btn-header-minimal {
+        padding: 8px 12px;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
     }
-   .logo-img {
+    .logo-img {
         width: 35px;
+    }
+    .product-render-section {
+        padding: 60px 20px;
+    }
+    .render-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .render-img {
+        order: -1;
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+    .feat-tag {
+        position: static !important;
+        transform: none !important;
+        text-align: center;
+        width: fit-content;
+        margin: 5px auto;
+        font-size: 0.65rem;
+        white-space: normal;
     }
 }
