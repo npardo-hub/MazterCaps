@@ -479,8 +479,8 @@ body {
 .render-wrapper {
     position: relative;
     width: 100%;
-    max-width: 480px;
-    margin: 60px auto;
+    max-width: 500px;
+    margin: 80px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -518,64 +518,46 @@ body {
 .feat-tag::after {
     content: "";
     position: absolute;
-    background: transparent;
     height: 1px;
-    border-top: 1px dotted var(--camel); 
-    opacity: 0.6;
+    border-top: 1px dotted var(--camel);
+    opacity: 0.5;
     z-index: -1;
+    top: 50%;
+    transform-origin: 0 0;
 }
-.t-top-left {
-    top: 5%; /* Un poco más arriba en la corona */
-    left: -110px; /* Separación de la gorra */
-}
+.t-top-left { top: 0%; left: -100px; }
 .t-top-left::after {
-    top: 50%; /* Centrada verticalmente en el tag */
-    right: -40px; /* Sale del tag */
-    width: 70px; /* Longitud justa para tocar el panel superior */
-    transform: rotate(15deg); /* Ángulo suave hacia arriba */
+    right: -100%;
+    width: 140px;
+    transform: rotate(25deg);
 }
-.t-bottom-left {
-    bottom: 25%; /* Cerca de la visera */
-    left: -130px; /* Separación de la gorra */
-}
+.t-bottom-left { bottom: 15%; left: -120px; }
 .t-bottom-left::after {
-    top: 50%; /* Centrada verticalmente en el tag */
-    right: -35px; /* Sale del tag */
-    width: 80px; /* Longitud justa para tocar el panel inferior */
-    transform: rotate(-10deg); /* Ángulo suave hacia abajo */
+    right: -100%;
+    width: 160px;
+    transform: rotate(-15deg);
 }
-.t-top-right {
-    top: 5%; /* Simétrico al top-left */
-    right: -110px; /* Separación de la gorra */
-}
+.t-top-right { top: 0%; right: -100px; }
 .t-top-right::after {
-    top: 50%; /* Centrada verticalmente en el tag */
-    left: -40px; /* Sale del tag */
-    width: 70px; /* Longitud justa para tocar el panel superior */
-    transform: rotate(-15deg); /* Ángulo suave hacia arriba */
+    left: -100%;
+    width: 140px;
+    transform: rotate(-25deg);
 }
-
-.t-mid-right {
-    top: 50%; /* Centrado vertical en la corona */
-    transform: translateY(-50%); /* Ajuste de centrado */
-    right: -150px; /* Separación de la gorra */
+.t-mid-right { 
+    top: 50%; 
+    right: -160px; 
+    transform: translateY(-50%); 
 }
 .t-mid-right::after {
-    top: 50%; /* Centrada verticalmente en el tag */
-    left: -35px; /* Sale del tag */
-    width: 90px; /* Longitud para cruzar y tocar el panel central */
-    /* Sin rotación, línea recta */
+    left: -80%;
+    width: 160px;
+    transform: rotate(0deg);
 }
-
-.t-bottom-right {
-    bottom: 5%; /* Cerca de la visera */
-    right: -80px; /* Un poco más cerca que el mid-right */
-}
+.t-bottom-right { bottom: 0%; right: -80px; }
 .t-bottom-right::after {
-    top: 50%; /* Centrada verticalmente en el tag */
-    left: -35px; /* Sale del tag */
-    width: 60px; /* Longitud para tocar el panel inferior */
-    transform: rotate(10deg); /* Ángulo suave hacia arriba */
+    left: -120%;
+    width: 150px;
+    transform: rotate(20deg);
 }
 /* =========================================
    8. RESPONSIVE
@@ -621,8 +603,8 @@ body {
         width: auto;
         border-left: 3px solid var(--camel);
     }
-   .feat-tag::before {
-        display: none !important; /* Quitamos las líneas en móvil */
+   .feat-tag::after {
+        display: none !important;
     }
     .main-photo-card {
         height: 350px;
