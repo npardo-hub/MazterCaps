@@ -471,34 +471,47 @@ body {
     color: #c62828;
 }
 .product-render-section {
-    padding: 60px 20px;
-    background-color: var(--white); /* O #f9f9f9 si prefieres que contraste */
+    padding: 100px 20px; /* Más espacio para las etiquetas */
+    background-color: var(--white);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .render-container {
-    max-width: 1200px;
+    position: relative; /* Necesario para posicionar los textos */
+    max-width: 600px;
     width: 100%;
     text-align: center;
 }
 
 .render-img {
-    /* Tamaño Mediano Responsivo */
     width: 100%;
-    max-width: 500px; /* Controla el tamaño máximo en PC */
+    max-width: 450px;
     height: auto;
-    display: inline-block;
-    
-    /* Efecto premium sutil */
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
-    transition: transform 0.3s ease;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
 }
 
-.render-img:hover {
-    transform: translateY(-10px) scale(1.02);
+/* Estilo Base de las Etiquetas */
+.feat-tag {
+    position: absolute;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 3px solid var(--camel);
+    white-space: nowrap;
+    z-index: 10;
 }
+.t1 { top: 10%; left: -10%; } 
+.t2 { top: 35%; right: -15%; } 
+.t3 { bottom: 20%; left: -15%; } 
+.t4 { bottom: 5%; right: 0%; }  
+.t5 { top: -5%; right: 10%; } 
 
 /* =========================================
    8. RESPONSIVE
@@ -507,7 +520,21 @@ body {
     .product-grid {
         grid-template-columns: 1fr;
     }
-    
+    .product-render-section {
+        padding: 40px 10px;
+    }
+   .feat-tag {
+        position: static; /* En móvil las ponemos en lista */
+        display: inline-block;
+        margin: 5px;
+        font-size: 0.65rem;
+        border-left: 2px solid var(--camel);
+    }
+   .render-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .story-grid, .comparison-grid {
         grid-template-columns: 1fr;
         flex-direction: column;
@@ -522,7 +549,9 @@ body {
         height: 350px;
     }
    .render-img {
-        max-width: 80%;
+        order: -1;
+        max-width: 280px;
+        margin-bottom: 20px;
     }
    .header-container {
         padding: 0 15px;
