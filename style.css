@@ -479,11 +479,12 @@ body {
 .render-wrapper {
     position: relative;
     width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+    max-width: 480px;
+    margin: 60px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 .render-img {
     width: 100%;
@@ -502,7 +503,7 @@ body {
 .feat-tag {
     position: absolute;
     background: white;
-    padding: 8px 14px;
+    padding: 8px 12px;
     border-radius: 4px;
     font-size: 0.7rem;
     font-weight: 700;
@@ -512,6 +513,7 @@ body {
     border-left: 4px solid var(--camel);
     white-space: nowrap;
     z-index: 5;
+    pointer-events: none;
 }
 .feat-tag::before {
     content: "";
@@ -523,25 +525,68 @@ body {
     z-index: -1;
     opacity: 0.5;
 }
-.t-top-left, .t-bottom-left {
-    left: -40px;
+.feat-tag::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 1px;
+    border-top: 1px dotted var(--camel); 
+    opacity: 0.6;
+    z-index: -1;
 }
-.t-top-left::before, .t-bottom-left::before {
-    right: -30px;
+.t-top-left {
+    top: 5%; /* Un poco más arriba en la corona */
+    left: -110px; /* Separación de la gorra */
+}
+.t-top-left::after {
+    top: 50%; /* Centrada verticalmente en el tag */
+    right: -40px; /* Sale del tag */
+    width: 70px; /* Longitud justa para tocar el panel superior */
+    transform: rotate(15deg); /* Ángulo suave hacia arriba */
+}
+.t-bottom-left {
+    bottom: 25%; /* Cerca de la visera */
+    left: -130px; /* Separación de la gorra */
+}
+.t-bottom-left::after {
+    top: 50%; /* Centrada verticalmente en el tag */
+    right: -35px; /* Sale del tag */
+    width: 80px; /* Longitud justa para tocar el panel inferior */
+    transform: rotate(-10deg); /* Ángulo suave hacia abajo */
+}
+.t-top-right {
+    top: 5%; /* Simétrico al top-left */
+    right: -110px; /* Separación de la gorra */
+}
+.t-top-right::after {
+    top: 50%; /* Centrada verticalmente en el tag */
+    left: -40px; /* Sale del tag */
+    width: 70px; /* Longitud justa para tocar el panel superior */
+    transform: rotate(-15deg); /* Ángulo suave hacia arriba */
 }
 
-.t-top-right, .t-mid-right, .t-bottom-right {
-    right: -40px;
+.t-mid-right {
+    top: 50%; /* Centrado vertical en la corona */
+    transform: translateY(-50%); /* Ajuste de centrado */
+    right: -150px; /* Separación de la gorra */
 }
-.t-top-right::before, .t-mid-right::before, .t-bottom-right::before {
-    left: -30px;
+.t-mid-right::after {
+    top: 50%; /* Centrada verticalmente en el tag */
+    left: -35px; /* Sale del tag */
+    width: 90px; /* Longitud para cruzar y tocar el panel central */
+    /* Sin rotación, línea recta */
 }
 
-.t-top-left { top: 10%; }
-.t-top-right { top: 5%; }
-.t-mid-right { top: 50%; transform: translateY(-50%); right: -90px; }
-.t-bottom-left { bottom: 20%; }
-.t-bottom-right { bottom: 5%; }
+.t-bottom-right {
+    bottom: 5%; /* Cerca de la visera */
+    right: -80px; /* Un poco más cerca que el mid-right */
+}
+.t-bottom-right::after {
+    top: 50%; /* Centrada verticalmente en el tag */
+    left: -35px; /* Sale del tag */
+    width: 60px; /* Longitud para tocar el panel inferior */
+    transform: rotate(10deg); /* Ángulo suave hacia arriba */
+}
 /* =========================================
    8. RESPONSIVE
    ========================================= */
