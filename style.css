@@ -553,7 +553,7 @@ model-viewer.render-img {
     }
     .t-top-left { left: 10px; top: 5%; }
     .t-top-right { right: 10px; top: 5%; }
-    .t-mid-right { right: 10px; top: 30%; }
+    .t-mid-right { right: 20px; top: 40%; }
     .t-bottom-left { left: 10px; bottom: 5%; }
     .t-bottom-right { right: 10px; bottom: 5%; }
    }
