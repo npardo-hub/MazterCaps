@@ -489,7 +489,7 @@ model-viewer.render-img {
 }
 .t-mid-right { 
     top: 50%; 
-    right: -140px; 
+    right: -190px; 
     transform: translateY(-50%); 
 }
 .t-bottom-right { 
