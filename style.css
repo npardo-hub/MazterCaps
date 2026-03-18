@@ -438,7 +438,7 @@ body {
 }
 model-viewer.render-img {
     width: 100%;
-    height: 60vh;
+    height: 450px;
     z-index: 10;
     position: relative;
     --poster-color: transparent;
@@ -534,4 +534,27 @@ model-viewer.render-img {
     .main-photo-card {
         height: 350px;
     }
+   .render-wrapper {
+        max-width: 100%;
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    model-viewer.render-img {
+        width: 100vw;
+        height: 60vh;
+        margin: 0;
+        --poster-color: transparent; 
+    }
+   .feat-tag {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+    .t-top-left { left: 10px; top: 5%; }
+    .t-top-right { right: 10px; top: 5%; }
+    .t-mid-right { right: 10px; top: 40%; }
+    .t-bottom-left { left: 10px; bottom: 5%; }
+    .t-bottom-right { right: 10px; bottom: 5%; }
+   }
 }
