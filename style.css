@@ -479,65 +479,26 @@ model-viewer.render-img {
     z-index: 5;
     pointer-events: none;
 }
-.feat-tag::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    border-top: 1px dotted var(--camel);
-    opacity: 1;
-    z-index: -1;
-    top: 50%;
-}
 .t-top-left {
     top: 0%; 
-    left: -100px; 
-}
-.t-top-left::after {
-    right: -140px;
-    width: 140px; 
-    transform: rotate(28deg);
-    transform-origin: left;
+    left: -100px;
 }
 .t-bottom-left {
     bottom: 15%; 
     left: -120px; 
 }
-.t-bottom-left::after {
-    right: -160px;
-    width: 160px;
-    transform: rotate(-18deg);
-    transform-origin: left;
-}
 .t-top-right { 
     top: 0%; 
     right: -100px; 
-}
-.t-top-right::after {
-    left: -140px;
-    width: 140px;
-    transform: rotate(-28deg);
-    transform-origin: right;
 }
 .t-mid-right { 
     top: 50%; 
     right: -160px; 
     transform: translateY(-50%); 
 }
-.t-mid-right::after {
-    left: -160px;
-    width: 160px;
-    transform: rotate(0deg);
-    transform-origin: right;
-}
 .t-bottom-right { 
     bottom: 0%; 
     right: -80px; 
-}
-.t-bottom-right::after {
-    left: -150px;
-    width: 150px;
-    transform: rotate(22deg);
-    transform-origin: right;
 }
 /* =========================================
    8. RESPONSIVENES
@@ -573,20 +534,6 @@ model-viewer.render-img {
         display: block;
         margin: 0 auto 25px auto;
         max-width: 260px;
-    }
-    .feat-tag {
-        position: static !important;
-        margin: 5px auto !important;
-        transform: none !important;
-        display: inline-block !important;
-        margin: 5px !important;
-        padding: 8px 12px;
-        font-size: 0.65rem;
-        width: auto;
-        border-left: 3px solid var(--camel);
-    }
-   .feat-tag::after {
-        display: none !important;
     }
     .main-photo-card {
         height: 350px;
