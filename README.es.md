@@ -74,12 +74,11 @@ El archivo `script.js` actúa como el cerebro. Utiliza una función llamada `car
 ### **Estilo y marca**
 Utilicé **variables CSS** al principio del archivo `style.css`.
 
-``css
 :root {
-
---camel: #C19A6B; /* Color principal de la marca */
-
---white: #ffffff;
+    --camel: #C19A6B;  /* The main brand color */
+    --white: #ffffff;
+    --transition: 0.4s;
+}
 
 --transition: 0.4s;
 ¿Quieres un aspecto de marca diferente? Simplemente cambia el código hexadecimal `--camel` y todo el sitio (botones, insignias, bordes, iconos) se actualizará al instante.
