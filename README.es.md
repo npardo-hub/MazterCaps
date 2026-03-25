@@ -16,15 +16,10 @@ Como desarrollador web, mi objetivo en este proyecto fue crear una **interfaz de
 
 --
 
-## 🛠 Lista de niveles de tecnología
+##🛠 Technology 
+"Tier List"Here is how I ranked the tools and techniques used to bring MazterCaps to life:TierTechnology / StrategyWhy it's here?S (God Tier)Vanilla JavaScriptDrives the entire logic (Modals, Dropdowns, Data injection) without heavy libraries.A (Elite)CSS Grid & FlexboxCreates a rock-solid responsive layout that looks great on any screen size.A (Elite)3D Model-ViewerProvides a "Premium Feel" by letting users see the product from every angle.B (Pro)CSS VariablesMakes "modding" or rebranding the site incredibly fast (change one color, change the whole site).B (Pro)JSON IntegrationSimplifies inventory management for the end-user.
 
-Así clasifiqué las herramientas y técnicas utilizadas para crear MazterCaps:
-
-| Nivel | Tecnología / Estrategia | ¿Por qué está aquí? |
-
-TierTechnology / StrategyWhy it's here?S (God Tier)Vanilla JavaScriptDrives the entire logic (Modals, Dropdowns, Data injection) without heavy libraries.A (Elite)CSS Grid & FlexboxCreates a rock-solid responsive layout that looks great on any screen size.A (Elite)3D Model-ViewerProvides a "Premium Feel" by letting users see the product from every angle.B (Pro)CSS VariablesMakes "modding" or rebranding the site incredibly fast (change one color, change the whole site).B (Pro)JSON IntegrationSimplifies inventory management for the end-user.
-
-## 📱 Características y funcionalidades
+##📱 Características y funcionalidades
 
 ### 1. Navegación y menús inteligentes 🍔
 El encabezado incluye un **menú desplegable minimalista**. En lugar de saturar la pantalla, el menú "Productos" solo aparece cuando es necesario, manteniendo el enfoque en los elementos visuales. Es totalmente accesible y se cierra automáticamente al hacer clic fuera de él.
