@@ -22,19 +22,7 @@ Así clasifiqué las herramientas y técnicas utilizadas para crear MazterCaps:
 
 | Nivel | Tecnología / Estrategia | ¿Por qué está aquí? |
 
-| :--- | :--- | :--- |
-
-| **S (Nivel Dios)** | **JavaScript puro** | Gestiona toda la lógica (modales, menús desplegables, inyección de datos) sin bibliotecas pesadas. |
-
-| **A (Élite)** | **CSS Grid y Flexbox** | Crea un diseño responsivo sólido que se ve genial en cualquier tamaño de pantalla. |
-
-| **A (Élite)** | **Visor de modelos 3D** | Proporciona una "sensación premium" al permitir a los usuarios ver el producto desde todos los ángulos. |
-
-| **B (Profesional)** | **Variables CSS** | Modificar o cambiar la imagen del sitio web es increíblemente rápido (cambiar un color cambia todo el sitio). |
-
-| **B (Pro)** | **Integración JSON** | Simplifica la gestión del inventario para el usuario final. |
-
---
+TierTechnology / StrategyWhy it's here?S (God Tier)Vanilla JavaScriptDrives the entire logic (Modals, Dropdowns, Data injection) without heavy libraries.A (Elite)CSS Grid & FlexboxCreates a rock-solid responsive layout that looks great on any screen size.A (Elite)3D Model-ViewerProvides a "Premium Feel" by letting users see the product from every angle.B (Pro)CSS VariablesMakes "modding" or rebranding the site incredibly fast (change one color, change the whole site).B (Pro)JSON IntegrationSimplifies inventory management for the end-user.
 
 ## 📱 Características y funcionalidades
 
@@ -74,6 +62,7 @@ El archivo `script.js` actúa como el cerebro. Utiliza una función llamada `car
 ### **Estilo y marca**
 Utilicé **variables CSS** al principio del archivo `style.css`.
 
+CSS
 :root {
     --camel: #C19A6B;  /* The main brand color */
     --white: #ffffff;
