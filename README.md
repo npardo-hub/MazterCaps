@@ -80,5 +80,3 @@ The contact form is replaced by a high-conversion **WhatsApp Modal**. It include
 * Add a dark mode toggle.
 * Implement a search bar for specific cap models.
 * Integrate an automated "Shopping Cart" local storage.
-
-**Would you like me to show you how to connect this to a real database like Firebase or Supabase next?**
