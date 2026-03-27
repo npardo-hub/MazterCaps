@@ -1,7 +1,7 @@
 [
   {
     "id": "207D",
-    "nombre": "207D Drill",
+    "nombre": "207D Drill Clásico",
     "categoria": "Clásico",
     "tipo_paneles": 6,
     "descripcion": "Gorra resistente fabricada en tela drill, ideal para uso diario y personalización.",
@@ -44,7 +44,7 @@
   },
   {
     "id": "208",
-    "nombre": "208 Drill",
+    "nombre": "208 Drill Premium",
     "categoria": "Premium",
     "tipo_paneles": 6,
     "descripcion": "La versión premium de nuestra línea drill, con acabados superiores y mayor durabilidad.",
@@ -89,13 +89,13 @@
       {"color_nombre": "Gris","hex": "#808080","fotos": ["Assets/NiñoGris1.jpeg","Assets/NiñoGris2.jpeg","Assets/NiñoGris3.jpeg"]},
       {"color_nombre": "Gris Claro","hex": "#C0C0C0","fotos": ["Assets/NiñoGrisClaro1.jpeg","Assets/NiñoGrisClaro2.jpeg","Assets/NiñoGrisClaro3.jpeg"]},
       {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/NiñoNegro1.jpeg","Assets/NiñoNegro2.jpeg","Assets/NiñoNegro3.jpeg"]},
-      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/NiñoRosado1.jpeg","Assets/NiñoRosado2.jpeg","Assets/NiñoRosado3.jpeg"]},
+      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/NiñoRosa1.jpeg","Assets/NiñoRosa2.jpeg","Assets/NiñoRosa3.jpeg"]},
       {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/NiñoVerdeCali1.jpeg","Assets/NiñoVerdeCali2.jpeg","Assets/NiñoVerdeCali3.jpeg"]},
       {"color_nombre": "Vino Tinto","hex": "#800020","fotos": ["Assets/NiñoVinoTinto1.jpeg","Assets/NiñoVinoTinto2.jpeg","Assets/NiñoVinoTinto3.jpeg"]}]
     },
     {
     "id": "207H",
-    "nombre": "207H Paño",
+    "nombre": "207H Paño Acrílico",
     "categoria": "Acrilico",
     "tipo_paneles": 6,
     "descripcion": "La gorra besibolera hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
@@ -116,7 +116,7 @@
    },
    {
     "id": "VISERA",
-    "nombre": "Visera",
+    "nombre": "Visera Plana",
     "categoria": "Plana",
     "tipo_paneles": 6,
     "descripcion": "gorra con estilo único, con su visera plana.",
@@ -128,10 +128,10 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Azul Visera Azul","hex": "#FF00FF","fotos": ["Assets/AzulViseraAzul1.jpeg","Assets/AzulViseraAzul2.jpeg","Assets/AzulViseraAzul3.jpeg"]},
+      {"color_nombre": "Azul Visera Azul","hex": "#120FFF","fotos": ["Assets/AzulViseraAzul1.jpeg","Assets/AzulViseraAzul2.jpeg","Assets/AzulViseraAzul3.jpeg"]},
       {"color_nombre": "Blanca Visera Blanca","hex": "#F4F4F4","fotos": ["Assets/BlancaViseraBlanca1.jpeg","Assets/BlancaViseraBlanca2.jpeg","Assets/BlancaViseraBlanca3.jpeg"]},
-      {"color_nombre": "Blanco Visera Negra","hex": "#FFC0CB","fotos": ["Assets/BlancoViseraNegra1.jpeg","Assets/BlancoViseraNegra2.jpeg","Assets/BlancoViseraNegra3.jpeg"]},
-      {"color_nombre": "Caki Visera Caki","hex": "#008F39","fotos": ["Assets/CakiViseraCaki1.jpeg","Assets/CakiViseraCaki2.jpeg","Assets/CakiViseraCaki3.jpeg"]},
+      {"color_nombre": "Blanco Visera Negra","hex": "#F4F4F4","fotos": ["Assets/BlancoViseraNegra1.jpeg","Assets/BlancoViseraNegra2.jpeg","Assets/BlancoViseraNegra3.jpeg"]},
+      {"color_nombre": "Caki Visera Caki","hex": "#A18262","fotos": ["Assets/CakiViseraCaki1.jpeg","Assets/CakiViseraCaki2.jpeg","Assets/CakiViseraCaki3.jpeg"]},
       {"color_nombre": "Gris Oscuro Visera Gris Oscuro","hex": "#4D5645","fotos": ["Assets/GrisOscuroViseraGrisOscuro1.jpeg","Assets/GrisOscuroViseraGrisOscuro2.jpeg","Assets/GrisOscuroViseraGrisOscuro3.jpeg"]},
       {"color_nombre": "Gris Visera Gris","hex": "#808080","fotos": ["Assets/GrisViseraGris1.jpeg","Assets/GrisViseraGris2.jpeg","Assets/GrisViseraGris3.jpeg"]},
       {"color_nombre": "Negro Visera Negra","hex": "#000000","fotos": ["Assets/NegraViseraNegra1.jpeg","Assets/NegraViseraNegra2.jpeg","Assets/NegraViseraNegra3.jpeg"]},
@@ -146,7 +146,7 @@
    },
    {
     "id": "340",
-    "nombre": "340 Drill",
+    "nombre": "340 Drill Publicidad",
     "categoria": "Publicidad",
     "tipo_paneles": 5,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
