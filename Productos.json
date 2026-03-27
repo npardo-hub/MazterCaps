@@ -1,7 +1,7 @@
 [
   {
     "id": "207D",
-    "nombre": "207D Drill Clásico",
+    "nombre": "Drill",
     "categoria": "Clásico",
     "tipo_paneles": 6,
     "descripcion": "Gorra resistente fabricada en tela drill, ideal para uso diario y personalización.",
@@ -44,7 +44,7 @@
   },
   {
     "id": "208",
-    "nombre": "208 Drill Premium",
+    "nombre": "Drill",
     "categoria": "Premium",
     "tipo_paneles": 6,
     "descripcion": "La versión premium de nuestra línea drill, con acabados superiores y mayor durabilidad.",
@@ -95,7 +95,7 @@
     },
     {
     "id": "207H",
-    "nombre": "207H Paño Acrílico",
+    "nombre": "Paño",
     "categoria": "Acrilico",
     "tipo_paneles": 6,
     "descripcion": "La gorra besibolera hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
@@ -116,7 +116,7 @@
    },
    {
     "id": "VISERA",
-    "nombre": "Visera Plana",
+    "nombre": "Visera",
     "categoria": "Plana",
     "tipo_paneles": 6,
     "descripcion": "gorra con estilo único, con su visera plana.",
@@ -146,7 +146,7 @@
    },
    {
     "id": "340",
-    "nombre": "340 Drill Publicidad",
+    "nombre": "340 Drill",
     "categoria": "Publicidad",
     "tipo_paneles": 5,
     "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
