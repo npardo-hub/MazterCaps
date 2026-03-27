@@ -1,52 +1,6 @@
 [
   {
-    "id": "g-005",
-    "nombre": "340 Drill",
-    "categoria": "Publicidad",
-    "tipo_paneles": 5,
-    "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
-    "precio_mayoreo": 5500,
-    "stock_total": 1,
-    "medidas": {
-      "circunferencia": "56 cm",
-      "altura": "16 cm",
-      "visera": "7.5 cm"
-    },
-    "colores": [
-      {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_5paneles.jpeg"]}]},
-  {
-    "id": "g-004",
-    "nombre": "Militar",
-    "categoria": "Diseño Especial",
-    "tipo_paneles": 6,
-    "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
-    "precio_mayoreo": 7000,
-    "stock": 0,
-    "medidas": {
-      "circunferencia": "57 cm",
-      "altura": "14 cm",
-      "visera": "7.5 cm"
-    },
-    "colores": [
-      {"color_nombre": "Verde Militar","hex": "#4B5320","fotos": ["Assets/Militar1.jpeg"]},
-      {"color_nombre": "Verde Militar2","hex": "#00FF00","fotos": ["Assets/Militar2.jpeg"]}]},
-  {
-    "id": "g-003",
-    "nombre": "207H Paño",
-    "categoria": "Acrilico",
-    "tipo_paneles": 6,
-    "descripcion": "La gorra clásica hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
-    "precio_mayoreo": 6500,
-    "stock_total": 1,
-    "medidas": {
-      "circunferencia": "57 cm",
-      "altura": "14 cm",
-      "visera": "7.5 cm"
-    },
-    "colores": [
-      {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_PanoAcrilico.jpeg"]}]},
-  {
-    "id": "g-002",
+    "id": "207D",
     "nombre": "207D Drill",
     "categoria": "Clásico",
     "tipo_paneles": 6,
@@ -59,28 +13,37 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/Azul Rey_Drill.jpeg"] },
-      { "color_nombre": "Azul Turkesa", "hex": "#0077FF", "fotos": ["Assets/Azul Turkesa_Drill.jpeg"] },
-      { "color_nombre": "Azul", "hex": "#0000FF", "fotos": ["Assets/Azul_Drill.jpeg"] },
-      { "color_nombre": "Beis", "hex": "#EDE8D0", "fotos": ["Assets/Beis_Drill.jpeg"] },
-      { "color_nombre": "Blanco", "hex": "#FFFFFF", "fotos": ["Assets/Blanco_Drill.jpeg"] },
-      { "color_nombre": "Caki", "hex": "#E0D8B0", "fotos": ["Assets/Caki_Drill.jpeg"] },
-      { "color_nombre": "Fucsia", "hex": "#FF00FF", "fotos": ["Assets/Fucsia_Drill.jpeg"] },
-      { "color_nombre": "Gris Claro", "hex": "#CDCDCD", "fotos": ["Assets/Gris Claro_Drill.jpeg"] },
-      { "color_nombre": "Gris Oscuro", "hex": "#828282", "fotos": ["Assets/Gris Oscuro_Drill.jpeg"] },
-      { "color_nombre": "Gris", "hex": "#9C9C9C", "fotos": ["Assets/Gris_Drill.jpeg"] },
-      { "color_nombre": "Guayaba", "hex": "#E6C8C1", "fotos": ["Assets/Guayaba_Drill.jpeg"] },
-      { "color_nombre": "Morado", "hex": "#800080", "fotos": ["Assets/Morado_Drill.jpeg"] },
-      { "color_nombre": "Mostaza", "hex": "#E0B046", "fotos": ["Assets/Mostaz_Drill.jpeg"] },
-      { "color_nombre": "Rojo", "hex": "#FF0000", "fotos": ["Assets/Rojo_Drill.jpeg"] },
-      { "color_nombre": "Salmon", "hex": "#FA8072", "fotos": ["Assets/Salmon_Drill.jpeg"] },
-      { "color_nombre": "Verde Limon", "hex": "#BFFF00", "fotos": ["Assets/Verde Limon_Drill.jpeg"] },
-      { "color_nombre": "Verde", "hex": "#006400", "fotos": ["Assets/Verde_Drill.jpeg"] },
-      { "color_nombre": "Vino Tinto", "hex": "#732E30", "fotos": ["Assets/Vino Tinto_Drill.jpeg"] }
+      { "color_nombre": "Amarillo", "hex": "#FFFF00", "fotos": ["Assets/207drillAmarilloMiel1.jpeg", "Assets/207drillAmarilloMiel2.jpeg", "Assets/207drillAmarilloMiel3.jpeg"] },
+      { "color_nombre": "Azul Oscuro", "hex": "#001855", "fotos": ["Assets/207drillAzulOscuro1.jpeg", "Assets/207drillAzulOscuro2.jpeg", "Assets/207drillAzulOscuro3.jpeg"] },
+      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": ["Assets/207drillAzulRey1.jpeg", "Assets/207drillAzulRey2.jpeg", "Assets/207drillAzulRey3.jpeg"] },
+      { "color_nombre": "Azul Turquesa", "hex": "#0077FF", "fotos": ["Assets/207drillAzulTurkesa1.jpeg", "Assets/207drillAzulTurkesa2.jpeg", "Assets/207drillAzulTurkesa3.jpeg"] },
+      { "color_nombre": "Beige", "hex": "#EDE8D0", "fotos": ["Assets/207drillBeige1.jpeg", "Assets/207drillBeige2.jpeg", "Assets/207drillBeige3.jpeg"] },
+      { "color_nombre": "Blanco", "hex": "#FFFFFF", "fotos": ["Assets/207drillBlanco1.jpeg", "Assets/207drillBlanco2.jpeg", "Assets/207drillBlanco3.jpeg"] },
+      { "color_nombre": "Cafe", "hex": "#412B19", "fotos": ["Assets/207drillCafe1.jpeg", "Assets/207drillCafe2.jpeg", "Assets/207drillCafe3.jpeg"] },
+      { "color_nombre": "CakiClaro", "hex": "#A18262", "fotos": ["Assets/207drillCakiClaro1.jpeg", "Assets/207drillCakiClaro2.jpeg", "Assets/207drillCakiClaro3.jpeg"] },
+      { "color_nombre": "CakiOscuro", "hex": "#BDB76B", "fotos": ["Assets/207drillCakiOscuro1.jpeg", "Assets/207drillCakiOscuro2.jpeg", "Assets/207drillCakiOscuro3.jpeg"] },
+      { "color_nombre": "Fucsia", "hex": "#FF00FF", "fotos": ["Assets/207drillFucsia1.jpeg", "Assets/207drillFucsia2.jpeg", "Assets/207drillFucsia3.jpeg"] },
+      { "color_nombre": "Gris Claro", "hex": "#CDCDCD", "fotos": ["Assets/207drillGrisClaro1.jpeg", "Assets/207drillGrisClaro2.jpeg", "Assets/207drillGrisClaro3.jpeg"] },
+      { "color_nombre": "Gris Oscuro", "hex": "#828282", "fotos": ["Assets/207drillGrisOscuro1.jpeg", "Assets/207drillGrisOscuro2.jpeg", "Assets/207drillGrisOscuro3.jpeg"] },
+      { "color_nombre": "Guayaba", "hex": "#E6C8C1", "fotos": ["Assets/207drillGuayaba1.jpeg", "Assets/207drillGuayaba2.jpeg", "Assets/207drillGuayaba3.jpeg"] },
+      { "color_nombre": "Lila", "hex": "#CCA9DD", "fotos": ["Assets/207drillLila1.jpeg", "Assets/207drillLila2.jpeg", "Assets/207drillLila3.jpeg"] },
+      { "color_nombre": "Morado", "hex": "#800080", "fotos": ["Assets/207drillMorado1.jpeg", "Assets/207drillMorado2.jpeg", "Assets/207drillMorado3.jpeg"] },
+      { "color_nombre": "Mostaza", "hex": "#E0B046", "fotos": ["Assets/207drillMostaza1.jpeg", "Assets/207drillMostaza2.jpeg", "Assets/207drillMostaza3.jpeg"] },
+      { "color_nombre": "Naranja", "hex": "#FF8000", "fotos": ["Assets/207drillNaranja1.jpeg", "Assets/207drillNaranja2.jpeg", "Assets/207drillNaranja3.jpeg"] },
+      { "color_nombre": "NaranjaNeon", "hex": "#FC4B08", "fotos": ["Assets/207drillNaranjaNeon1.jpeg", "Assets/207drillNaranjaNeon2.jpeg", "Assets/207drillNaranjaNeon3.jpeg"] },
+      { "color_nombre": "Negro", "hex": "#000000", "fotos": ["Assets/207drillNegro1.jpeg", "Assets/207drillNegro2.jpeg", "Assets/207drillNegro3.jpeg"] },
+      { "color_nombre": "Rojo", "hex": "#FF0000", "fotos": ["Assets/207drillRojo1.jpeg", "Assets/207drillRojo2.jpeg", "Assets/207drillRojo3.jpeg"] },
+      { "color_nombre": "Rosado", "hex": "#FFCBDB", "fotos": ["Assets/207drillRosado1.jpeg", "Assets/207drillRosado2.jpeg", "Assets/207drillRosado3.jpeg"] },
+      { "color_nombre": "Salmon", "hex": "#FA8072", "fotos": ["Assets/207drillSalmon1.jpeg", "Assets/207drillSalmon2.jpeg", "Assets/207drillSalmon3.jpeg"] },
+      { "color_nombre": "Verde Cali", "hex": "#008F39", "fotos": ["Assets/207drillVerdeCali1.jpeg", "Assets/207drillVerdeCali2.jpeg", "Assets/207drillVerdeCali3.jpeg"] },
+      { "color_nombre": "Verde Limon", "hex": "#BFFF00", "fotos": ["Assets/207drillVerdeLimon1.jpeg", "Assets/207drillVerdeLimon2.jpeg", "Assets/207drillVerdeLimon3.jpeg"] },
+      { "color_nombre": "Verde Olivo", "hex": "#006400", "fotos": ["Assets/207drillVerdeOlivo1.jpeg", "Assets/207drillVerdeOlivo2.jpeg", "Assets/207drillVerdeOlivo3.jpeg"] },
+      { "color_nombre": "Vino Tinto", "hex": "#732E30", "fotos": ["Assets/207drillVinoTinto1.jpeg","Assets/207drillVinoTinto2.jpeg", "Assets/207drillVinoTinto3.jpeg"] },
+      { "color_nombre": "Zapote", "hex": "#C58900", "fotos": ["Assets/207drillZapote1.jpeg", "Assets/207drillZapote2.jpeg", "Assets/207drillZapote3.jpeg"] }
     ]
   },
   {
-    "id": "g-001",
+    "id": "208",
     "nombre": "208 Drill",
     "categoria": "Premium",
     "tipo_paneles": 6,
@@ -93,10 +56,108 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/Negro_Drill caro.jpeg"]},
-      {"color_nombre": "Rojo","hex": "#FF0000","fotos": ["Assets/Rojo_Drill caro1.jpeg","Assets/Rojo_Drill caro2.jpeg","Assets/Rojo_Drill caro3.jpeg"]},
-      {"color_nombre": "Blanco","hex": "#FFFFFF","fotos": ["Assets/Blanco_Drill caro.jpeg","Assets/Blanco_Drill caro2.jpeg","Assets/Blanco_Drill caro3.jpeg"]},
-      {"color_nombre": "Cafe","hex": "#8B4513","fotos": ["Assets/Cafe_Drill caro.jpeg"]},
-      {"color_nombre": "Verde","hex": "#006400","fotos": ["Assets/Verde_Drill caro1.jpeg","Assets/Verde_Drill caro2.jpeg","Assets/Verde_Drill caro3.jpeg"]}]
-  }
+      {"color_nombre": "Azul Oscuro","hex": "#001855","fotos": ["Assets/208AzulOscuro1.jpeg","Assets/208AzulOscuro2.jpeg","Assets/208AzulOscuro3.jpeg"]},
+      {"color_nombre": "Beige","hex": "#EDE8D0","fotos": ["Assets/208Beige1.jpeg","Assets/208Beige2.jpeg","Assets/208Beige3.jpeg"]},
+      {"color_nombre": "Blanco","hex": "#F4F4F4","fotos": ["Assets/208Blanco1.jpeg","Assets/208Blanco2.jpeg","Assets/208Blanco3.jpeg"]},
+      {"color_nombre": "Cafe","hex": "#412B19","fotos": ["Assets/208Cafe1.jpeg","Assets/208Cafe2.jpeg","Assets/208Cafe3.jpeg"]},
+      {"color_nombre": "Caki","hex": "#A18262","fotos": ["Assets/208Caki1.jpeg","Assets/208Caki2.jpeg","Assets/208Caki3.jpeg"]},
+      {"color_nombre": "Naranja","hex": "#FF8000","fotos": ["Assets/208Naranja1.jpeg","Assets/208Naranja2.jpeg","Assets/208Naranja3.jpeg"]},
+      {"color_nombre": "NaranjaNeon","hex": "#FC4B08","fotos": ["Assets/208NaranjaNeon1.jpeg","Assets/208NaranjaNeon2.jpeg","Assets/208NaranjaNeon3.jpeg"]},
+      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/208Negro1.jpeg","Assets/208Negro2.jpeg","Assets/208Negro3.jpeg"]},
+      {"color_nombre": "Rojo","hex": "#FF0000","fotos": ["Assets/208Rojo1.jpeg","Assets/208Rojo2.jpeg","Assets/208Rojo3.jpeg"]},
+      {"color_nombre": "Verde Botella","hex": "#00913F","fotos": ["Assets/208VerdeBotella1.jpeg","Assets/208VerdeBotella2.jpeg","Assets/208VerdeBotella3.jpeg"]},
+      {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/208VerdeCali1.jpeg","Assets/208VerdeCali2.jpeg","Assets/208VerdeCali3.jpeg"]}]
+    },
+    {
+    "id": "GLPAN",
+    "nombre": "Paño Acrílico",
+    "categoria": "Para Niños",
+    "tipo_paneles": 6,
+    "descripcion": "La gorra clásica hecha en paño acrílico para niños, con un ícono de estilo urbano que combina diseño y estructura.",
+    "precio_mayoreo": 6500,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
+    },
+    "colores": [
+      {"color_nombre": "Azul Rey","hex": "#120FFF","fotos": ["Assets/NiñosAzulRey1.jpeg","Assets/NiñosAzulRey2.jpeg","Assets/NiñosAzulRey3.jpeg"]},
+      {"color_nombre": "Blanco","hex": "#F4F4F4","fotos": ["Assets/NiñosBlanco1.jpeg","Assets/NiñosBlanco2.jpeg","Assets/NiñosBlanco3.jpeg"]},
+      {"color_nombre": "Caki","hex": "#A18262","fotos": ["Assets/NiñosCaki1.jpeg","Assets/NiñosCaki2.jpeg","Assets/NiñosCaki3.jpeg"]},
+      {"color_nombre": "Fucsia","hex": "#FF00FF","fotos": ["Assets/NiñoFucsia1.jpeg","Assets/NiñoFucsia2.jpeg","Assets/NiñoFucsia3.jpeg"]},
+      {"color_nombre": "Gris","hex": "#808080","fotos": ["Assets/NiñosGris1.jpeg","Assets/NiñosGris2.jpeg","Assets/NiñosGris3.jpeg"]},
+      {"color_nombre": "Gris Claro","hex": "#C0C0C0","fotos": ["Assets/NiñosGrisClaro1.jpeg","Assets/NiñosGrisClaro2.jpeg","Assets/NiñosGrisClaro3.jpeg"]},
+      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/NiñosNegro1.jpeg","Assets/NiñosNegro2.jpeg","Assets/NiñosNegro3.jpeg"]},
+      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/NiñosRosado1.jpeg","Assets/NiñosRosado2.jpeg","Assets/NiñosRosado3.jpeg"]},
+      {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/NiñosVerdeCali1.jpeg","Assets/NiñosVerdeCali2.jpeg","Assets/NiñosVerdeCali3.jpeg"]},
+      {"color_nombre": "Vino Tinto","hex": "#800020","fotos": ["Assets/NiñosVinoTinto1.jpeg","Assets/NiñosVinoTinto2.jpeg","Assets/NiñosVinoTinto3.jpeg"]}]
+    },
+    {
+    "id": "207H",
+    "nombre": "207H Paño",
+    "categoria": "Acrilico",
+    "tipo_paneles": 6,
+    "descripcion": "La gorra besibolera hecha en paño acrílico es un ícono de estilo urbano que combina diseño y estructura.",
+    "precio_mayoreo": 6500,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
+    },
+    "colores": [
+      {"color_nombre": "Fucsia","hex": "#FF00FF","fotos": ["Assets/PañoAcrilicoFucsia1.jpeg","Assets/PañoAcrilicoFucsia2.jpeg","Assets/PañoAcrilicoFucsia3.jpeg"]},
+      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/PañoAcrilicoNegro1.jpeg","Assets/PañoAcrilicoNegro2.jpeg","Assets/PañoAcrilicoNegro3.jpeg"]},
+      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/PañoAcrilicoRosado1.jpeg","Assets/PañoAcrilicoRosado2.jpeg","Assets/PañoAcrilicoRosado3.jpeg"]},
+      {"color_nombre": "Verde Botella","hex": "#008F39","fotos": ["Assets/PañoAcrilicoVerdeBotella1.jpeg","Assets/PañoAcrilicoVerdeBotella2.jpeg","Assets/PañoAcrilicoVerdeBotella3.jpeg"]},
+      {"color_nombre": "Verde Militar","hex": "#228B22","fotos": ["Assets/PañoAcrilicoVerdeMilitar1.jpeg","Assets/PañoAcrilicoVerdeMilitar2.jpeg","Assets/PañoAcrilicoVerdeMilitar3.jpeg"]},
+      {"color_nombre": "Verde Pino","hex": "#90EE90","fotos": ["Assets/PañoAcrilicoVerdePino1.jpeg","Assets/PañoAcrilicoVerdePino2.jpeg","Assets/PañoAcrilicoVerdePino3.jpeg"]}]
+   },
+   {
+    "id": "VISERA",
+    "nombre": "Visera",
+    "categoria": "Plana",
+    "tipo_paneles": 6,
+    "descripcion": "gorra con estilo único, con su visera plana.",
+    "precio_mayoreo": 6500,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "57 cm",
+      "altura": "14 cm",
+      "visera": "7.5 cm"
+    },
+    "colores": [
+      {"color_nombre": "Azul Visera Azul","hex": "#FF00FF","fotos": ["Assets/AzulViseraAzul1.jpeg","Assets/AzulViseraAzul2.jpeg","Assets/AzulViseraAzul3.jpeg"]},
+      {"color_nombre": "Blanca Visera Blanca","hex": "#F4F4F4","fotos": ["Assets/BlancaViseraBlanca1.jpeg","Assets/BlancaViseraBlanca2.jpeg","Assets/BlancaViseraBlanca3.jpeg"]},
+      {"color_nombre": "Blanco Visera Negra","hex": "#FFC0CB","fotos": ["Assets/BlancoViseraNegra1.jpeg","Assets/BlancoViseraNegra2.jpeg","Assets/BlancoViseraNegra3.jpeg"]},
+      {"color_nombre": "Caki Visera Caki","hex": "#008F39","fotos": ["Assets/CakiViseraCaki1.jpeg","Assets/CakiViseraCaki2.jpeg","Assets/CakiViseraCaki3.jpeg"]},
+      {"color_nombre": "Gris Oscuro Visera Gris Oscuro","hex": "#4D5645","fotos": ["Assets/GrisOscuroViseraGrisOscuro1.jpeg","Assets/GrisOscuroViseraGrisOscuro2.jpeg","Assets/GrisOscuroViseraGrisOscuro3.jpeg"]},
+      {"color_nombre": "Gris Visera Gris","hex": "#808080","fotos": ["Assets/GrisViseraGris1.jpeg","Assets/GrisViseraGris2.jpeg","Assets/GrisViseraGris3.jpeg"]},
+      {"color_nombre": "Negro Visera Negra","hex": "#000000","fotos": ["Assets/NegraViseraNegra1.jpeg","Assets/NegraViseraNegra2.jpeg","Assets/NegraViseraNegra3.jpeg"]},
+      {"color_nombre": "Negro Visera Roja","hex": "#000000","fotos": ["Assets/NegroViseraRoja1.jpeg","Assets/NegroViseraRoja2.jpeg","Assets/NegroViseraRoja3.jpeg"]},
+      {"color_nombre": "Rojo Visera Negra","hex": "#FE0000","fotos": ["Assets/RojoViseraNegra1.jpeg","Assets/RojoViseraNegra2.jpeg","Assets/RojoViseraNegra3.jpeg"]},
+      {"color_nombre": "Rojo Visera Rojo","hex": "#FE0000","fotos": ["Assets/RojoViseraRojo1.jpeg","Assets/RojoViseraRojo2.jpeg","Assets/RojoViseraRojo3.jpeg"]},
+      {"color_nombre": "Rosado Visera Rosado","hex": "#FFC0CB","fotos": ["Assets/RosadoViseraRosado1.jpeg","Assets/RosadoViseraRosado2.jpeg","Assets/RosadoViseraRosado3.jpeg"]},
+      {"color_nombre": "Salmon Visera Salmon","hex": "#FA8072","fotos": ["Assets/SalmonViseraSalmon1.jpeg","Assets/SalmonViseraSalmon2.jpeg","Assets/SalmonViseraSalmon3.jpeg"]},
+      {"color_nombre": "Verde Visera Mostaza","hex": "#008000","fotos": ["Assets/VerdeViseraMostaza1.jpeg","Assets/VerdeViseraMostaza2.jpeg","Assets/VerdeViseraMostaza3.jpeg"]},
+      {"color_nombre": "Vino Tinto Visera Vino Tinto","hex": "#722F37","fotos": ["Assets/VinoTintoViseraVinoTinto1.jpeg","Assets/VinoTintoViseraVinoTinto2.jpeg","Assets/VinoTintoViseraVinoTinto3.jpeg"]}
+    ]
+   },
+   {
+    "id": "340",
+    "nombre": "340 Drill",
+    "categoria": "Publicidad",
+    "tipo_paneles": 5,
+    "descripcion": "Una gorra con diseño tipo camuflaje, ideal para un look moderno y liso en el frente.",
+    "precio_mayoreo": 5500,
+    "stock_total": 1,
+    "medidas": {
+      "circunferencia": "56 cm",
+      "altura": "16 cm",
+      "visera": "7.5 cm"
+    },
+    "colores": [
+      {"color_nombre": "Amarillo","hex": "#FFFF00","fotos": ["Assets/Amarillo_5paneles.jpeg"]}]
+   }
 ]
