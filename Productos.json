@@ -65,7 +65,7 @@
       {"color_nombre": "NaranjaNeon","hex": "#FC4B08","fotos": ["Assets/208NaranjaNeon1.jpeg","Assets/208NaranjaNeon2.jpeg","Assets/208NaranjaNeon3.jpeg"]},
       {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/208Negro1.jpeg","Assets/208Negro2.jpeg","Assets/208Negro3.jpeg"]},
       {"color_nombre": "Rojo","hex": "#FF0000","fotos": ["Assets/208Rojo1.jpeg","Assets/208Rojo2.jpeg","Assets/208Rojo3.jpeg"]},
-      {"color_nombre": "Verde Botella","hex": "#00913F","fotos": ["Assets/208VerdeBotella1.jpeg","Assets/208VerdeBotella2.jpeg","Assets/208VerdeBotella3.jpeg"]},
+      {"color_nombre": "Verde Botella","hex": "#06402b","fotos": ["Assets/208VerdeBotella1.jpeg","Assets/208VerdeBotella2.jpeg","Assets/208VerdeBotella3.jpeg"]},
       {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/208VerdeCali1.jpeg","Assets/208VerdeCali2.jpeg","Assets/208VerdeCali3.jpeg"]}]
     },
     {
@@ -82,16 +82,16 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Azul Rey","hex": "#120FFF","fotos": ["Assets/NiñosAzulRey1.jpeg","Assets/NiñosAzulRey2.jpeg","Assets/NiñosAzulRey3.jpeg"]},
-      {"color_nombre": "Blanco","hex": "#F4F4F4","fotos": ["Assets/NiñosBlanco1.jpeg","Assets/NiñosBlanco2.jpeg","Assets/NiñosBlanco3.jpeg"]},
-      {"color_nombre": "Caki","hex": "#A18262","fotos": ["Assets/NiñosCaki1.jpeg","Assets/NiñosCaki2.jpeg","Assets/NiñosCaki3.jpeg"]},
+      {"color_nombre": "Azul Rey","hex": "#120FFF","fotos": ["Assets/NiñoAzulRey1.jpeg","Assets/NiñoAzulRey2.jpeg","Assets/NiñoAzulRey3.jpeg"]},
+      {"color_nombre": "Blanco","hex": "#F4F4F4","fotos": ["Assets/NiñoBlanco1.jpeg","Assets/NiñoBlanco2.jpeg","Assets/NiñoBlanco3.jpeg"]},
+      {"color_nombre": "Caki","hex": "#A18262","fotos": ["Assets/NiñoCaki1.jpeg","Assets/NiñoCaki2.jpeg","Assets/NiñoCaki3.jpeg"]},
       {"color_nombre": "Fucsia","hex": "#FF00FF","fotos": ["Assets/NiñoFucsia1.jpeg","Assets/NiñoFucsia2.jpeg","Assets/NiñoFucsia3.jpeg"]},
-      {"color_nombre": "Gris","hex": "#808080","fotos": ["Assets/NiñosGris1.jpeg","Assets/NiñosGris2.jpeg","Assets/NiñosGris3.jpeg"]},
-      {"color_nombre": "Gris Claro","hex": "#C0C0C0","fotos": ["Assets/NiñosGrisClaro1.jpeg","Assets/NiñosGrisClaro2.jpeg","Assets/NiñosGrisClaro3.jpeg"]},
-      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/NiñosNegro1.jpeg","Assets/NiñosNegro2.jpeg","Assets/NiñosNegro3.jpeg"]},
-      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/NiñosRosado1.jpeg","Assets/NiñosRosado2.jpeg","Assets/NiñosRosado3.jpeg"]},
-      {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/NiñosVerdeCali1.jpeg","Assets/NiñosVerdeCali2.jpeg","Assets/NiñosVerdeCali3.jpeg"]},
-      {"color_nombre": "Vino Tinto","hex": "#800020","fotos": ["Assets/NiñosVinoTinto1.jpeg","Assets/NiñosVinoTinto2.jpeg","Assets/NiñosVinoTinto3.jpeg"]}]
+      {"color_nombre": "Gris","hex": "#808080","fotos": ["Assets/NiñoGris1.jpeg","Assets/NiñoGris2.jpeg","Assets/NiñoGris3.jpeg"]},
+      {"color_nombre": "Gris Claro","hex": "#C0C0C0","fotos": ["Assets/NiñoGrisClaro1.jpeg","Assets/NiñoGrisClaro2.jpeg","Assets/NiñoGrisClaro3.jpeg"]},
+      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/NiñoNegro1.jpeg","Assets/NiñoNegro2.jpeg","Assets/NiñoNegro3.jpeg"]},
+      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/NiñoRosado1.jpeg","Assets/NiñoRosado2.jpeg","Assets/NiñoRosado3.jpeg"]},
+      {"color_nombre": "Verde Cali","hex": "#008F39","fotos": ["Assets/NiñoVerdeCali1.jpeg","Assets/NiñoVerdeCali2.jpeg","Assets/NiñoVerdeCali3.jpeg"]},
+      {"color_nombre": "Vino Tinto","hex": "#800020","fotos": ["Assets/NiñoVinoTinto1.jpeg","Assets/NiñoVinoTinto2.jpeg","Assets/NiñoVinoTinto3.jpeg"]}]
     },
     {
     "id": "207H",
