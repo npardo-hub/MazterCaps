@@ -540,6 +540,11 @@ model-viewer.render-img {
 }
 .footer-right {
     text-align: right;
+    margin: 2px 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
 }
 .footer-right p {
     margin: 2px 0;
