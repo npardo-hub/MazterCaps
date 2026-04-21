@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.colores.forEach((c, i) => {
             const div = document.createElement('div');
             div.className = 'burbuja-color';
-            
+            div.title = c.color_nombre;
             // Verificación si el hex es un String o un Array (Bicolor)
             if (Array.isArray(c.hex)) {
                 div.style.background = `linear-gradient(135deg, ${c.hex[0]} 50%, ${c.hex[1]} 50%)`;
