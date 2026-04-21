@@ -56,7 +56,7 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Azul Oscuro","hex": "#001855","fotos": ["Assets/208AzulOscuro1.jpeg","Assets/208AzulOscuro2.jpeg","Assets/208AzulOscuro3.jpeg"]},
+      {"color_nombre": "Azul Oscuro","hex": "#021132","fotos": ["Assets/208AzulOscuro1.jpeg","Assets/208AzulOscuro2.jpeg","Assets/208AzulOscuro3.jpeg"]},
       {"color_nombre": "Beige","hex": "#EDE8D0","fotos": ["Assets/208Beige1.jpeg","Assets/208Beige2.jpeg","Assets/208Beige3.jpeg"]},
       {"color_nombre": "Blanco","hex": "#F4F4F4","fotos": ["Assets/208Blanco1.jpeg","Assets/208Blanco2.jpeg","Assets/208Blanco3.jpeg"]},
       {"color_nombre": "Cafe","hex": "#412B19","fotos": ["Assets/208Cafe1.jpeg","Assets/208Cafe2.jpeg","Assets/208Cafe3.jpeg"]},
