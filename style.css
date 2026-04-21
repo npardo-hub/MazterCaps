@@ -173,13 +173,19 @@ body {
     margin: 20px 0;
 }
 .burbuja-color {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    border: 2px solid #ddd;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden; 
+}
+.burbuja-color:hover {
+    transform: scale(1.1);
+    border-color: var(--camel);
 }
 .burbuja-color.active {
     border-color: var(--camel);
