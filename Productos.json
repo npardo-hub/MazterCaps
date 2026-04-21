@@ -128,20 +128,20 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Azul Visera Azul","hex": "#120FFF","fotos": ["Assets/AzulViseraAzul1.jpeg","Assets/AzulViseraAzul2.jpeg","Assets/AzulViseraAzul3.jpeg"]},
-      {"color_nombre": "Blanca Visera Blanca","hex": "#F4F4F4","fotos": ["Assets/BlancaViseraBlanca1.jpeg","Assets/BlancaViseraBlanca2.jpeg","Assets/BlancaViseraBlanca3.jpeg"]},
-      {"color_nombre": "Blanco Visera Negra","hex": "#F4F4F4","fotos": ["Assets/BlancoViseraNegra1.jpeg","Assets/BlancoViseraNegra2.jpeg","Assets/BlancoViseraNegra3.jpeg"]},
-      {"color_nombre": "Caki Visera Caki","hex": "#A18262","fotos": ["Assets/CakiViseraCaki1.jpeg","Assets/CakiViseraCaki2.jpeg","Assets/CakiViseraCaki3.jpeg"]},
-      {"color_nombre": "Gris Oscuro Visera Gris Oscuro","hex": "#4D5645","fotos": ["Assets/GrisOscuroViseraGrisOscuro1.jpeg","Assets/GrisOscuroViseraGrisOscuro2.jpeg","Assets/GrisOscuroViseraGrisOscuro3.jpeg"]},
-      {"color_nombre": "Gris Visera Gris","hex": "#808080","fotos": ["Assets/GrisViseraGris1.jpeg","Assets/GrisViseraGris2.jpeg","Assets/GrisViseraGris3.jpeg"]},
-      {"color_nombre": "Negro Visera Negra","hex": "#000000","fotos": ["Assets/NegraViseraNegra1.jpeg","Assets/NegraViseraNegra2.jpeg","Assets/NegraViseraNegra3.jpeg"]},
-      {"color_nombre": "Negro Visera Roja","hex": "#000000","fotos": ["Assets/NegroViseraRoja1.jpeg","Assets/NegroViseraRoja2.jpeg","Assets/NegroViseraRoja3.jpeg"]},
-      {"color_nombre": "Rojo Visera Negra","hex": "#FE0000","fotos": ["Assets/RojoViseraNegra1.jpeg","Assets/RojoViseraNegra2.jpeg","Assets/RojoViseraNegra3.jpeg"]},
-      {"color_nombre": "Rojo Visera Rojo","hex": "#FE0000","fotos": ["Assets/RojoViseraRojo1.jpeg","Assets/RojoViseraRojo2.jpeg","Assets/RojoViseraRojo3.jpeg"]},
-      {"color_nombre": "Rosado Visera Rosado","hex": "#FFC0CB","fotos": ["Assets/RosadoViseraRosado1.jpeg","Assets/RosadoViseraRosado2.jpeg","Assets/RosadoViseraRosado3.jpeg"]},
-      {"color_nombre": "Salmon Visera Salmon","hex": "#FA8072","fotos": ["Assets/SalmonViseraSalmon1.jpeg","Assets/SalmonViseraSalmon2.jpeg","Assets/SalmonViseraSalmon3.jpeg"]},
-      {"color_nombre": "Verde Visera Mostaza","hex": "#008000","fotos": ["Assets/VerdeViseraMostaza1.jpeg","Assets/VerdeViseraMostaza2.jpeg","Assets/VerdeViseraMostaza3.jpeg"]},
-      {"color_nombre": "Vino Tinto Visera Vino Tinto","hex": "#722F37","fotos": ["Assets/VinoTintoViseraVinoTinto1.jpeg","Assets/VinoTintoViseraVinoTinto2.jpeg","Assets/VinoTintoViseraVinoTinto3.jpeg"]}
+      {"color_nombre": "Azul Visera Azul","hex": ["#120FFF","#120FFF"],"fotos": ["Assets/AzulViseraAzul1.jpeg","Assets/AzulViseraAzul2.jpeg","Assets/AzulViseraAzul3.jpeg"]},
+      {"color_nombre": "Blanca Visera Blanca","hex": ["#F4F4F4","#F4F4F4"],"fotos": ["Assets/BlancaViseraBlanca1.jpeg","Assets/BlancaViseraBlanca2.jpeg","Assets/BlancaViseraBlanca3.jpeg"]},
+      {"color_nombre": "Blanco Visera Negra","hex": ["#F4F4F4","#000000"],"fotos": ["Assets/BlancoViseraNegra1.jpeg","Assets/BlancoViseraNegra2.jpeg","Assets/BlancoViseraNegra3.jpeg"]},
+      {"color_nombre": "Caki Visera Caki","hex": ["#A18262","#A18262"],"fotos": ["Assets/CakiViseraCaki1.jpeg","Assets/CakiViseraCaki2.jpeg","Assets/CakiViseraCaki3.jpeg"]},
+      {"color_nombre": "Gris Oscuro Visera Gris Oscuro","hex": ["#4D5645","#4D5645"],"fotos": ["Assets/GrisOscuroViseraGrisOscuro1.jpeg","Assets/GrisOscuroViseraGrisOscuro2.jpeg","Assets/GrisOscuroViseraGrisOscuro3.jpeg"]},
+      {"color_nombre": "Gris Visera Gris","hex": ["#808080","#808080"],"fotos": ["Assets/GrisViseraGris1.jpeg","Assets/GrisViseraGris2.jpeg","Assets/GrisViseraGris3.jpeg"]},
+      {"color_nombre": "Negro Visera Negra","hex": ["#000000","#000000"],"fotos": ["Assets/NegraViseraNegra1.jpeg","Assets/NegraViseraNegra2.jpeg","Assets/NegraViseraNegra3.jpeg"]},
+      {"color_nombre": "Negro Visera Roja","hex": ["#000000","#FE0000"],"fotos": ["Assets/NegroViseraRoja1.jpeg","Assets/NegroViseraRoja2.jpeg","Assets/NegroViseraRoja3.jpeg"]},
+      {"color_nombre": "Rojo Visera Negra","hex": ["#FE0000","#000000"],"fotos": ["Assets/RojoViseraNegra1.jpeg","Assets/RojoViseraNegra2.jpeg","Assets/RojoViseraNegra3.jpeg"]},
+      {"color_nombre": "Rojo Visera Rojo","hex": ["#FE0000","#FE0000"],"fotos": ["Assets/RojoViseraRojo1.jpeg","Assets/RojoViseraRojo2.jpeg","Assets/RojoViseraRojo3.jpeg"]},
+      {"color_nombre": "Rosado Visera Rosado","hex": ["#FFC0CB","#FFC0CB"],"fotos": ["Assets/RosadoViseraRosado1.jpeg","Assets/RosadoViseraRosado2.jpeg","Assets/RosadoViseraRosado3.jpeg"]},
+      {"color_nombre": "Salmon Visera Salmon","hex": ["#FA8072","#FA8072"],"fotos": ["Assets/SalmonViseraSalmon1.jpeg","Assets/SalmonViseraSalmon2.jpeg","Assets/SalmonViseraSalmon3.jpeg"]},
+      {"color_nombre": "Verde Visera Mostaza","hex": ["#008000","#E0B046"],"fotos": ["Assets/VerdeViseraMostaza1.jpeg","Assets/VerdeViseraMostaza2.jpeg","Assets/VerdeViseraMostaza3.jpeg"]},
+      {"color_nombre": "Vino Tinto Visera Vino Tinto","hex": ["#722F37","#722F37"],"fotos": ["Assets/VinoTintoViseraVinoTinto1.jpeg","Assets/VinoTintoViseraVinoTinto2.jpeg","Assets/VinoTintoViseraVinoTinto3.jpeg"]}
     ]
    },
    {
