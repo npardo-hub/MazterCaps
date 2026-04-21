@@ -1,5 +1,5 @@
 /* =========================================
-   1. VARIABLES INICIALES
+   1. VARIABLES Y BASE
    ========================================= */
 :root {
     --camel: #C19A6B;
@@ -8,6 +8,7 @@
     --light-gray: #f4f4f4;
     --transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -16,8 +17,9 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
+
 /* =========================================
-   2. HEADER Y BOTONES
+   2. HEADER
    ========================================= */
 .main-header {
     background-color: var(--camel);
@@ -27,6 +29,7 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,483 +38,191 @@ body {
     align-items: center;
     padding: 0 20px;
 }
+
 .brand-group {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .logo-img {
-    width: 42px;
+    width: 45px;
     height: auto;
 }
+
 .brand-name {
     color: white;
-    font-weight: bold;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    text-transform: none;
-}
-.btn-header-minimal {
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 10px 26px;
-    border-radius: 2px;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.btn-header-minimal {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
     cursor: pointer;
+    font-weight: 600;
     transition: var(--transition);
-    font-family: inherit;
 }
+
 .btn-header-minimal:hover {
-    background-color: white;
+    background: white;
     color: var(--camel);
-    border-color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transform: translateY(-1px);
 }
+
 /* =========================================
-   3. GALERÍA (CORRECCIÓN DE ENCUADRE)
+   3. PRODUCTO Y GALERÍA
    ========================================= */
 .page-wrapper {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
+
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 40px;
+    align-items: start;
 }
+
 .main-photo-card {
-    background: var(--light-gray);
-    border-radius: 12px;
-    height: 480px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    height: 500px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
     overflow: hidden;
-    border: 1px solid #eee;
+    position: relative;
 }
+
 #foto-principal {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
-.fade-out {
-    opacity: 0;
-}
-.thumbs-grid {
+
+.fade-out { opacity: 0; }
+
+.miniaturas-container {
     display: flex;
     gap: 12px;
-    margin: 20px 0;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
 }
+
 .miniatura {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     cursor: pointer;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    background: white;
-    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    object-fit: cover;
+    transition: var(--transition);
 }
-.miniatura:hover {
-    border-color: var(--camel);
-    transform: scale(1.05);
-}
-.info-adicional {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-    justify-content: center;
-}
-.cajon-info {
-    flex: 1;
-    background: white;
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
-.cajon-info small {
-    display: block;
-    color: var(--camel);
-    font-size: 0.65rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-.cajon-info span {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
+
+.miniatura:hover { border-color: var(--camel); }
+
 /* =========================================
-   4. SIDEBAR Y OPCIONS
+   4. SELECTOR DE COLORES (GRADIENTES)
    ========================================= */
-.options-sidebar {
-    background: var(--light-gray);
-    padding: 30px;
-    border-radius: 12px;
+.selector-colores {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.color-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
     gap: 12px;
     margin: 20px 0;
 }
-.burbuja-color {
-    width: 30px;
-    height: 30px;
+
+.color-item {
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid #ddd;
-    transition: transform 0.2s ease;
-    display: inline-block;
-    margin: 5px;
-    overflow: hidden; 
+    border: 2px solid #eee;
+    transition: var(--transition);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.burbuja-color:hover {
-    transform: scale(1.1);
-    border-color: var(--camel);
-}
-.burbuja-color.active {
+
+.color-item.selected {
     border-color: var(--camel);
     transform: scale(1.15);
+    box-shadow: 0 0 0 3px rgba(193, 154, 107, 0.2);
 }
-.price-display {
-    font-size: 2.2rem;
-    font-weight: 800;
-    text-align: center;
-    margin: 10px 0;
-    color: var(--text);
-}
-.legal-info {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-.import-note {
-    font-size: 0.7rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.tax-note {
-    font-size: 0.75rem;
-    text-align: center;
-    color: #666;
-    margin-top: 5px;
-}
+
 /* =========================================
-   5. SECCIONES INFORMATIVAS
+   5. RENDER 3D Y TAGS (SIN LÍNEAS)
    ========================================= */
-.brand-story-section {
-    padding: 80px 20px;
-    background: #f9f9f9;
-}
-.section-title {
-    text-align: center;
-    color: var(--camel);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 50px;
-    font-size: 1.6rem;
-}
-.story-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.story-card {
-    background: white;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-    transition: transform 0.3s;
-}
-.story-card:hover {
-    transform: translateY(-5px);
-}
-.story-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-/* =========================================
-   6. INFOGRAFÍA COMPARATIVA
-   ========================================= */
-.comparison-section {
-    padding: 80px 20px;
-    background: white;
-}
-.comparison-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.comp-card {
-    flex: 1;
-    background: #ebebeb;
-    padding: 45px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    opacity: 0.5;
-    filter: grayscale(80%);
-    transition: all 0.5s ease;
-}
-.comp-card.highlight {
-    opacity: 1;
-    filter: grayscale(0%);
-    background: var(--white);
-    border: 1px solid var(--camel);
-    box-shadow: 0 10px 40px rgba(193, 154, 107, 0.15);
-    transform: scale(1.02);
-    z-index: 2;
-}
-.badge {
-    background: var(--camel);
-    color: white;
-    padding: 5px 12px;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-.comp-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-.comp-list li {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 0.85rem;
-    color: #555;
-}
-.comp-list li strong {
-    display: block;
-    color: var(--camel);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-}
-.vs-divider {
-    font-weight: 900;
-    color: #ddd;
-    font-style: italic;
-    font-size: 1.4rem;
-}
-/* =========================================
-   7. MENÚ Y MODAL
-   ========================================= */
-.dropdown { 
-    position: relative; 
-}
-.dropdown-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
-    background: white;
-    border: 1px solid #eee;
-    width: 250px;
-    position: absolute;
-    top: calc(100% + 15px);
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    display: none;
-    z-index: 1100;
-}
-.dropdown-menu.active {
-    display: block;
-}
-.dropdown-menu li {
-    padding: 12px 20px;
-    cursor: pointer;
-    font-size: 0.85rem;
-    border-bottom: 1px solid #f9f9f9;
-    color: var(--text);
-    text-align: left;
-    transition: background 0.2s;
-}
-.dropdown-menu li:hover {
-    background: var(--light-gray);
-    color: var(--camel);
-}
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    z-index: 2000;
-    backdrop-filter: blur(4px);
-}
-.modal-content {
-    background: white;
-    width: 90%;
-    max-width: 400px;
-    margin: 10% auto;
-    padding: 40px;
-    border-radius: 8px;
-    border-top: 6px solid var(--camel);
-    position: relative;
-    text-align: center;
-}
-.close-modal {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #aaa;
-}
-.btn-whatsapp {
-    background: #25D366;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-.stock-status {
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 3px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-.status-disponible {
-    background-color: #e8f5e9;
-    color: #2e7d32;
-}
-.status-agotado {
-    background-color: #ffebee;
-    color: #c62828;
-}
 .product-render-section {
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+    padding: 80px 20px;
+    text-align: center;
     overflow: visible;
 }
-.product-render-section
+
 .section-title {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 80px;
-    color: var(--camel);
-    letter-spacing: 2px;
+    margin-bottom: 60px;
+    font-size: 2rem;
+    color: var(--text);
 }
+
 .render-container-central {
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-model-viewer.render-img {
     width: 100%;
-    height: 450px;
-    z-index: 10;
-    position: relative;
-    --poster-color: transparent;
 }
+
 .render-wrapper {
     position: relative;
     width: 100%;
     max-width: 500px;
     height: 450px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.render-img {
+
+model-viewer.render-img {
     width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 10;
-    filter: drop-shadow(0 20px 35px rgba(0,0,0,0.12));
+    height: 100%;
+    --poster-color: transparent;
 }
+
 .feat-tag {
     position: absolute;
+    padding: 8px 15px;
     background: white;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--text);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    border-left: 4px solid var(--camel);
+    border: 1px solid var(--camel);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     white-space: nowrap;
-    z-index: 5;
-    pointer-events: none;
+    z-index: 20;
 }
-.t-top-left {
-    top: 0%; 
-    left: -100px;
-}
-.t-bottom-left {
-    bottom: 15%; 
-    left: -120px; 
-}
-.t-top-right { 
-    top: 0%; 
-    right: -100px; 
-}
-.t-mid-right { 
-    top: 50%; 
-    right: -190px; 
-    transform: translateY(-50%); 
-}
-.t-bottom-right { 
-    bottom: 0%; 
-    right: -80px; 
-}
+
+/* Posiciones de los Tags */
+.t-top-left { top: 10%; left: -50px; }
+.t-top-right { top: 10%; right: -50px; }
+.t-mid-right { top: 45%; right: -80px; }
+.t-bottom-left { bottom: 10%; left: -50px; }
+.t-bottom-right { bottom: 10%; right: -50px; }
+
 /* =========================================
-   9. FOOTER (PIE DE PÁGINA)
+   6. FOOTER LEGAL
    ========================================= */
 .main-footer {
-    background-color: var(--camel); /* Color #C19A6B */
+    background-color: var(--camel);
     color: white;
     padding: 40px 0;
-    margin-top: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+    font-family: 'Segoe UI', sans-serif;
 }
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -520,129 +231,67 @@ model-viewer.render-img {
     align-items: center;
     padding: 0 20px;
 }
-.footer-logo {
-    width: 60px;
-    height: auto;
-    margin-bottom: 15px;
-}
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-.social-icon img {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s ease;
-}
+
+.footer-logo { width: 60px; margin-bottom: 10px; }
+
+.social-links { display: flex; gap: 15px; }
+
 .social-icon svg {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: var(--transition);
 }
+
 .social-icon:hover svg {
-    transform: scale(1.1);
+    transform: translateY(-3px);
     opacity: 0.8;
 }
-.social-icon:hover img {
-    opacity: 0.7;
-}
-.footer-right {
-    text-align: right;
-    margin: 2px 0;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    opacity: 0.9;
-}
-}
+
+.footer-right { text-align: right; }
 .footer-right p {
-    margin: 2px 0;
-    font-size: 0.75rem; /* Tamaño pequeño */
-    letter-spacing: 0.5px;
+    margin: 3px 0;
+    font-size: 0.75rem;
     opacity: 0.9;
 }
+
 /* =========================================
-   8. RESPONSIVENES
+   7. RESPONSIVO MÓVIL
    ========================================= */
 @media (max-width: 600px) {
-    .header-container {
-        padding: 0 15px;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        align-items: center;
-        gap: 10px;
-    }
-    .btn-header-minimal {
-        padding: 8px 12px;
-        font-size: 0.65rem;
-        letter-spacing: 1px;
-        white-space: nowrap;
-    }
-    .logo-img {
-        width: 35px;
-    }
-    .product-grid, 
-    .story-grid, 
-    .comparison-grid {
-        display: block;
-    }
-    .render-wrapper {
-        display: block;
-        text-align: center;
-        padding: 20px 0;
-    }
-    .render-img {
-        display: block;
-        margin: 0 auto 25px auto;
-        max-width: 260px;
-    }
-    .main-photo-card {
-        height: 350px;
-    }
-   .render-wrapper {
-        max-width: 100%;
+    .product-grid { display: block; }
+    
+    .main-photo-card { height: 350px; }
+
+    .product-render-section {
+        padding: 40px 0;
         width: 100vw;
-        height: 100%;
-        margin: 0;
+    }
+
+    .render-wrapper {
+        height: 60vh;
+        max-width: 100%;
     }
 
     model-viewer.render-img {
         width: 100vw;
-        height: 60vh;
-        margin: 0;
-        --poster-color: transparent; 
+        height: 100%;
     }
-   .feat-tag {
-        font-size: 0.7rem;
-        padding: 6px 10px;
-    }
-    .t-top-left {
-        left: 10px; top: 5%;
-    }
-    .t-top-right {
-        right: 10px; top: 5%;
-    }
-    .t-mid-right {
-        right: -10px; top: 40%;
-    }
-    .t-bottom-left {
-        left: 10px; bottom: 5%;
-    }
-    .t-bottom-right {
-        right: 10px; bottom: 5%;
-    }
+
+    /* Reposicionar tags para que no se salgan del ancho del móvil */
+    .t-top-left { left: 10px; top: 2%; }
+    .t-top-right { right: 10px; top: 2%; }
+    .t-mid-right { right: 10px; top: 45%; }
+    .t-bottom-left { left: 10px; bottom: 2%; }
+    .t-bottom-right { right: 10px; bottom: 2%; }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
-    .footer-left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-right {
-        text-align: center;
+
+    .footer-right { 
+        text-align: center; 
+        width: 100%;
         border-top: 1px solid rgba(255,255,255,0.2);
         padding-top: 20px;
-        width: 100%;
     }
-   }
 }
