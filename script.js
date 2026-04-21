@@ -40,7 +40,18 @@
         if(viejoStock) viejoStock.remove();
         const stockInfo = document.createElement('div');
         const btnCompra = document.querySelector('.btn-whatsapp');
-        if (item.stock_total > 0) {
+        colorData.forEach(color => {
+        const burbuja = document.createElement('div');
+        burbuja.className = 'burbuja-color';   
+        const colores = color.codigo_hex; // Esto ahora es un Array
+        if (colores.length === 2) {
+            burbuja.style.background = `linear-gradient(135deg, ${colores[0]} 50%, ${colores[1]} 50%)`;
+        } else {
+            burbuja.style.backgroundColor = colores[0];
+        }
+        burbuja.onclick = () => actualizarVista(color);
+        });
+            if (item.stock_total > 0) {
             stockInfo.className = 'stock-status status-disponible';
             stockInfo.textContent = '● Disponible';
             btnCompra.classList.remove('disabled');
