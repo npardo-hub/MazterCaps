@@ -107,12 +107,32 @@
       "visera": "7.5 cm"
     },
     "colores": [
-      {"color_nombre": "Fucsia","hex": "#FF69B4","fotos": ["Assets/PañoAcrilicoFucsia1.jpeg","Assets/PañoAcrilicoFucsia2.jpeg","Assets/PañoAcrilicoFucsia3.jpeg"]},
-      {"color_nombre": "Negro","hex": "#000000","fotos": ["Assets/PañoAcrilicoNegro1.jpeg","Assets/PañoAcrilicoNegro2.jpeg","Assets/PañoAcrilicoNegro3.jpeg"]},
-      {"color_nombre": "Rosado","hex": "#FFC0CB","fotos": ["Assets/PañoAcrilicoRosado1.jpeg","Assets/PañoAcrilicoRosado2.jpeg","Assets/PañoAcrilicoRosado3.jpeg"]},
-      {"color_nombre": "Verde Botella","hex": "#3a736f","fotos": ["Assets/PañoAcrilicoVerdeBotella1.jpeg","Assets/PañoAcrilicoVerdeBotella2.jpeg","Assets/PañoAcrilicoVerdeBotella3.jpeg"]},
-      {"color_nombre": "Verde Militar","hex": "#263019","fotos": ["Assets/PañoAcrilicoVerdeMilitar1.jpeg","Assets/PañoAcrilicoVerdeMilitar2.jpeg","Assets/PañoAcrilicoVerdeMilitar3.jpeg"]},
-      {"color_nombre": "Verde Pino","hex": "#556B2F","fotos": ["Assets/PañoAcrilicoVerdePino1.jpeg","Assets/PañoAcrilicoVerdePino2.jpeg","Assets/PañoAcrilicoVerdePino3.jpeg"]}]
+      { "color_nombre": "Amarillo", "hex": "#FFFF00", "fotos": [""] },
+      { "color_nombre": "Azul Oscuro", "hex": "#001855", "fotos": [""] },
+      { "color_nombre": "Azul Rey", "hex": "#120FFF", "fotos": [""] },
+      { "color_nombre": "Azul Turquesa", "hex": "#0077FF", "fotos": [""] },
+      { "color_nombre": "Beige", "hex": "#EDE8D0", "fotos": [""] },
+      { "color_nombre": "Blanco", "hex": "#FFFFFF", "fotos": [""] },
+      { "color_nombre": "Cafe", "hex": "#412B19", "fotos": [""] },
+      { "color_nombre": "CakiClaro", "hex": "#A18262", "fotos": [""] },
+      { "color_nombre": "CakiOscuro", "hex": "#BDB76B", "fotos": [""] },
+      { "color_nombre": "Fucsia", "hex": "#FF00FF", "fotos": ["Assets/PañoAcrilicoFucsia1.jpeg","Assets/PañoAcrilicoFucsia2.jpeg","Assets/PañoAcrilicoFucsia3.jpeg"] },
+      { "color_nombre": "Gris Claro", "hex": "#CDCDCD", "fotos": [""] },
+      { "color_nombre": "Gris Oscuro", "hex": "#828282", "fotos": [""] },
+      { "color_nombre": "Guayaba", "hex": "#E6C8C1", "fotos": [""] },
+      { "color_nombre": "Lila", "hex": "#CCA9DD", "fotos": [""] },
+      { "color_nombre": "Morado", "hex": "#800080", "fotos": [""] },
+      { "color_nombre": "Mostaza", "hex": "#E0B046", "fotos": [""] },
+      { "color_nombre": "Naranja", "hex": "#FF8000", "fotos": [""] },
+      { "color_nombre": "NaranjaNeon", "hex": "#FC4B08", "fotos": [""] },
+      { "color_nombre": "Negro", "hex": "#000000", "fotos": ["Assets/PañoAcrilicoNegro1.jpeg","Assets/PañoAcrilicoNegro2.jpeg","Assets/PañoAcrilicoNegro3.jpeg"] },
+      { "color_nombre": "Rojo", "hex": "#FF0000", "fotos": [""] },
+      { "color_nombre": "Rosado", "hex": "#FFCBDB", "fotos": ["Assets/PañoAcrilicoRosado1.jpeg","Assets/PañoAcrilicoRosado2.jpeg","Assets/PañoAcrilicoRosado3.jpeg"] },
+      { "color_nombre": "Salmon", "hex": "#FA8072", "fotos": [""] },
+      { "color_nombre": "Verde Botella","hex": "#3a736f","fotos": ["Assets/PañoAcrilicoVerdeBotella1.jpeg","Assets/PañoAcrilicoVerdeBotella2.jpeg","Assets/PañoAcrilicoVerdeBotella3.jpeg"]},
+      { "color_nombre": "Verde Militar","hex": "#263019","fotos": ["Assets/PañoAcrilicoVerdeMilitar1.jpeg","Assets/PañoAcrilicoVerdeMilitar2.jpeg","Assets/PañoAcrilicoVerdeMilitar3.jpeg"]},
+      { "color_nombre": "Verde Pino","hex": "#556B2F","fotos": ["Assets/PañoAcrilicoVerdePino1.jpeg","Assets/PañoAcrilicoVerdePino2.jpeg","Assets/PañoAcrilicoVerdePino3.jpeg"]}
+      { "color_nombre": "Zapote", "hex": "#C58900", "fotos": [""] }]
    },
    {
     "id": "207Plana",
