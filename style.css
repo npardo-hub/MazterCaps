@@ -41,7 +41,7 @@ body {
     gap: 12px;
 }
 .logo-img {
-    width: 42px;
+    width: 60px;
     height: auto;
 }
 .brand-name {
@@ -508,7 +508,7 @@ model-viewer.render-img {
 .main-footer {
     background-color: var(--camel); /* Color #C19A6B */
     color: white;
-    padding: 40px 0;
+    padding: 20px 0;
     margin-top: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
