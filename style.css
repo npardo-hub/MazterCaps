@@ -527,22 +527,19 @@ model-viewer.render-img {
 }
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    align-items: center;
 }
-.social-icon img {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s ease;
+.social-icon {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
 }
-.social-icon svg {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.social-icon:hover svg {
-    transform: scale(1.1);
+.social-icon:hover {
+    transform: translateY(-3px);
     opacity: 0.8;
-}
-.social-icon:hover img {
-    opacity: 0.7;
 }
 .footer-right {
     text-align: right;
@@ -551,10 +548,9 @@ model-viewer.render-img {
     letter-spacing: 0.5px;
     opacity: 0.9;
 }
-}
 .footer-right p {
     margin: 2px 0;
-    font-size: 0.75rem; /* Tamaño pequeño */
+    font-size: 0.75rem;
     letter-spacing: 0.5px;
     opacity: 0.9;
 }
