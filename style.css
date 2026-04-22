@@ -543,7 +543,7 @@ model-viewer.render-img {
     line-height: 1.5;
 }
 .footer-logo {
-    width: 60px; /* Ajusta el tamaño del logo Dentro del footer aquí */
+    width: 70px; /* Ajusta el tamaño del logo Dentro del footer aquí */
     height: auto;
     margin: 0;
 }
