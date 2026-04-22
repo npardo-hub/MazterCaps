@@ -542,13 +542,11 @@ model-viewer.render-img {
     opacity: 0.9;
     line-height: 1.5;
 }
-/* Columna Central: Logo */
 .footer-logo {
-    width: 80px; /* Ajusta el tamaño de tu logo aquí */
+    width: 60px; /* Ajusta el tamaño del logo Dentro del footer aquí */
     height: auto;
     margin: 0;
 }
-/* Columna Derecha: Información Legal */
 .footer-right {
     text-align: right;
 }
